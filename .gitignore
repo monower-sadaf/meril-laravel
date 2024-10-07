@@ -18,3 +18,4 @@ yarn-error.log
 /.vscode
 index.php
 /app/Providers/AppServiceProvider.php
+meril-laravel.zip
