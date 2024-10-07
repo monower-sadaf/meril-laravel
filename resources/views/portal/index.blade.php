@@ -24,7 +24,10 @@
 
                 <a href="contact.html" class=" text-[16px] lg:text-[22px] bg-primary text-white font-bold px-2 py-1 lg:px-4 lg:py-2 rounded">Contact Us</a>
             </div>
-            <img class="w-[8em] h-[5em] lg:w-[16.4375em] lg:h-[9.8125em]" src="{{ asset('images/mysoft_logo.png') }}" alt="my soft logo" />
+            <a href="#" target="_blank">
+                <img class="w-[8em] h-[5em] lg:w-[16.4375em] lg:h-[9.8125em]" src="{{ asset('images/mysoft_logo.png') }}" alt="my soft logo" />
+            </a>
+            
         </div>
     </div>
 
@@ -91,7 +94,7 @@
 
 
     <section class="pb-[85px]">
-        <h3 class="text-center text-[26px] font-semibold text-primary pb-[47px]">Service</h3>
+        <h3 class="text-center text-[35px] font-semibold text-black pb-[47px]">Service</h3>
         <div class="container mx-auto px-2 lg:px-12 grid grid-cols-1 lg:grid-cols-4 gap-8">
             <div class="bg-[#F2F7FF] p-5 rounded-md flex flex-col justify-center items-center gap-5">
                 <img src="{{ asset('images/web2.png') }}" class="w-[80px]" alt="MerilSoft">
@@ -107,15 +110,167 @@
             </div>
             <div class="bg-[#F2F7FF] p-5 rounded-md flex flex-col justify-center items-center gap-5">
                 <img src="{{ asset('images/android2.png') }}" class="w-[80px]" alt="MerilSoft">
-                <h3 class="text-[20px] font-semibold text-center">Application and Apps development</h3>
+                <h3 class="text-[20px] font-semibold text-center">Apps Development</h3>
             </div>
         </div>
     </section>
 
 
-    <!-- <section class="container mx-auto px-2 lg:px-12 flex flex-col items-center justify-center pb-[33px]">
-        <h3 class="text-center text-[26px] font-semibold text-primary pb-[43px]">Why did you leave this rating?</h3>
-        <div class="flex justify-center items-center gap-3 pb-[42px]">
+    <section class="pb-[85px]">
+        <h3 class="text-center text-[35px] font-semibold text-black pb-[47px]">Solution</h3>
+        <div class="container mx-auto px-2 lg:px-12 grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <div class="bg-[#F2F7FF] p-5 rounded-md flex flex-col justify-center items-center gap-5">
+                <img src="{{ asset('images/egov.png') }}" class="w-[80px]" alt="MerilSoft">
+                <h3 class="text-[20px] font-semibold">E-Governance</h3>
+            </div>
+            <div class="bg-[#F2F7FF] p-5 rounded-md flex flex-col justify-center items-center gap-5">
+                <img src="{{ asset('images/erp.png') }}" class="w-[80px]" alt="MerilSoft">
+                <h3 class="text-[20px] font-semibold">ERP</h3>
+            </div>
+            <div class="bg-[#F2F7FF] p-5 rounded-md flex flex-col justify-center items-center gap-5">
+                <img src="{{ asset('images/infra.png') }}" class="w-[80px]" alt="MerilSoft">
+                <h3 class="text-[20px] font-semibold">Managed IT</h3>
+            </div>
+            <div class="bg-[#F2F7FF] p-5 rounded-md flex flex-col justify-center items-center gap-5">
+                <img src="{{ asset('images/pms.png') }}" class="w-[80px]" alt="MerilSoft">
+                <h3 class="text-[20px] font-semibold text-center">Innovation</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container mx-auto px-2 lg:px-12 pb-[62px] flex flex-col items-center">
+            <h3 class="text-[15px] lg:text-[35px] font-semibold pb-3 lg:pb-5 text-black text-center">What Clients Say About Us</h3>
+            <!-- <h3 class="text-[15px] lg:text-[25px] text-[#5C5C5C] text-center lg:w-[63%]">Rapidiously morph transparent internal or "organic" sources whereas resource sucking e-business innovate compelling internal.</h3> -->
+            <div class="owl-carousel owl-theme w-1/2 bg-white shadow-lg rounded-md">
+                <div class="item bg-white rounded-lg p-2 lg:p-4">
+                    <div class="pb-3">
+                        <svg class="w-10 h-10 fill-gray-100 bg-primary p-2 rounded-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+                    </div>
+                    <p class="text-[#2C2B2B] text-[14px] lg:text-[18px] leading-[30px] pb-3 lg:pb-5">Assertively procrastinate distributed relationships whereas equity invested intellectual capital everything energistically underwhelm proactive.</p>
+
+                    <div class="flex flex-col lg:flex-row items-center justify-between gap-3 lg:gap-0">
+                        <div class="flex items-center gap-3 lg:w-[40%]">
+                            <div>
+                                <img class="w-16 h-16" src=" {{ asset('images/user1.png') }}"alt="image">
+                            </div>
+                            <div>
+                                <p class="text-[18px] font-semibold text-primary">Kyan Boards</p>
+                                <p class="text-[14px] leading-[18px]">CEO, ThemeTags</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-col items-end">
+                                <div class="flex gap-2 pb-3 lg:pb-0">
+                                    <img class="w-4 h-4" src=" {{ asset('images/star.png') }}" alt="">
+                                    <img class="w-4 h-4" src=" {{ asset('images/star.png') }}" alt="">
+                                    <img class="w-4 h-4" src=" {{ asset('images/star.png') }}" alt="">
+                                    <img class="w-4 h-4" src=" {{ asset('images/star.png') }}" alt="">
+                                    <img class="w-4 h-4" src=" {{ asset('images/star.png') }}" alt="">
+                                </div>
+                                <p>5.0 Out of 5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="item bg-white rounded-lg shadow-lg p-2 lg:p-4">
+                    <div class="pb-3">
+                        <svg class="w-10 h-10 fill-gray-100 bg-primary p-2 rounded-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+                    </div>
+                    <p class="text-[#2C2B2B] text-[14px] lg:text-[18px] leading-[30px] pb-3 lg:pb-5"> Intrinsicly facilitate functional imperatives without next-generation services. Compellingly revolutionize worldwide users enterprise best practices.</p>
+
+                    <div class="flex flex-col lg:flex-row items-center justify-between gap-3 lg:gap-0">
+                        <div class="flex items-center gap-3 lg:w-[40%]">
+                            <div>
+                                <img class="w-16 h-16" src="{{ asset('images/user1.png') }}" alt="image">
+                            </div>
+                            <div>
+                                <p class="text-[18px] font-semibold text-primary">Pirtle Karol</p>
+                                <p class="text-[14px] leading-[18px]">Team Leader, ThemeTags</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-col items-end">
+                                <div class="flex gap-2 pb-3 lg:pb-0">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                </div>
+                                <p>5.0 Out of 5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-white rounded-lg shadow-lg p-2 lg:p-4">
+                    <div class="pb-3">
+                        <svg class="w-10 h-10 fill-gray-100 bg-primary p-2 rounded-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+                    </div>
+                    <p class="text-[#2C2B2B] text-[14px] lg:text-[18px] leading-[30px] pb-3 lg:pb-5">Assertively procrastinate distributed relationships whereas equity invested intellectual capital everything energistically underwhelm proactive.</p>
+
+                    <div class="flex flex-col lg:flex-row items-center justify-between gap-3 lg:gap-0">
+                        <div class="flex items-center gap-3 lg:w-[40%]">
+                            <div>
+                                <img class="w-16 h-16" src="{{ asset('images/user1.png') }}"alt="image">
+                            </div>
+                            <div>
+                                <p class="text-[18px] font-semibold text-primary">Kyan Boards</p>
+                                <p class="text-[14px] leading-[18px]">CEO, ThemeTags</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-col items-end">
+                                <div class="flex gap-2 pb-3 lg:pb-0">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                </div>
+                                <p>5.0 Out of 5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item bg-white rounded-lg shadow-lg p-2 lg:p-4">
+                    <div class="pb-3">
+                        <svg class="w-10 h-10 fill-gray-100 bg-primary p-2 rounded-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
+                    </div>
+                    <p class="text-[#2C2B2B] text-[14px] lg:text-[18px] leading-[30px] pb-3 lg:pb-5"> Intrinsicly facilitate functional imperatives without next-generation services. Compellingly revolutionize worldwide users enterprise best practices.</p>
+
+                    <div class="flex flex-col lg:flex-row items-center justify-between gap-3 lg:gap-0">
+                        <div class="flex items-center gap-3 lg:w-[40%]">
+                            <div>
+                                <img class="w-16 h-16" src="{{ asset('images/user1.png') }}" alt="image">
+                            </div>
+                            <div>
+                                <p class="text-[18px] font-semibold text-primary">Pirtle Karol</p>
+                                <p class="text-[14px] leading-[18px]">Team Leader, ThemeTags</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex flex-col items-end">
+                                <div class="flex gap-2 pb-3 lg:pb-0">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
+                                </div>
+                                <p>5.0 Out of 5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+               
+            </div>
+        </div>
+
+
+    <section class="container mx-auto px-2 lg:px-12 flex flex-col items-center justify-center pb-[33px]">
+        <h3 class="text-center text-[35px] font-semibold text-black pb-[15px]">Why did you leave this rating?</h3>
+        <div class="flex justify-center items-center gap-3 pb-[15px]">
             <img src="{{ asset('images/star.png') }}" class="w-[36px]" alt="MerilSoft">
             <img src="{{ asset('images/star.png') }}" class="w-[36px]" alt="MerilSoft">
             <img src="{{ asset('images/star.png') }}" class="w-[36px]" alt="MerilSoft">
@@ -126,10 +281,10 @@
         <form action="#">
             <textarea class="border border-gray-500 px-4 py-2 mb-[22px] rounded" rows="5" cols="70" name="comment" placeholder="Leave a comment"></textarea>
             <div class="flex justify-end">
-                <button class="bg-primary text-white px-4 py-2 rounded">Save and Continue</button>
+                <button class="bg-primary text-white px-4 py-2 rounded">Submit</button>
             </div>
         </form>
-    </section> -->
+    </section>
 
 
     <!-- <section class="container mx-auto px-2 lg:px-12 pb-[44px]">
@@ -188,4 +343,34 @@
         </div>
     </div>
 @endsection
+
+
+
+
+@section('scripts')
+<script src="{{ asset('owlcarousel/dist/owl.carousel.min.js') }}"></script>
+
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        // nav:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    });
+</script>
+@endsection
+
+
+
 
