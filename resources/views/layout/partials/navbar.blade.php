@@ -1,6 +1,6 @@
 <div class="bg-white py-1">
     <div class="container mx-auto px-2 lg:px-12 flex justify-end">
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-8">
             <a href="tel:+1-718-809-2244" class="flex items-center gap-2 text-[15px]">
                 <svg class="w-4 h-4 fill-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
                 <span>
@@ -25,43 +25,79 @@
         <ul class=" gap-12 font-bold text-white text-[18px] hidden lg:flex">
             <li>
                 <details class="dropdown group">
-                    <summary class="btn border-none min-h-0 h-auto font-bold text-[18px] flex items-center gap-2">
+                    <summary class="btn border-none min-h-0 h-auto font-bold text-[18px] flex items-center gap-2 px-0">
                         <span>
-                            Services
+                            Service
                         </span>
                         <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
                     </summary>
-                    <ul class="menu dropdown-content bg-white rounded-box z-[1] w-52 p-2 shadow text-black">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
+                    <ul class="menu dropdown-content rounded-box z-[1] w-52 p-2 shadow text-white bg-primary pt-10">
+                        <li>
+                            <a>Website Development</a>
+                        </li>
+                        <li>
+                            <a>Cloud and Hosting </a>
+                        </li>
+                        <li>
+                            <a>Digital Marketing</a>
+                        </li>
+                        <li>
+                            <a>Software Development</a>
+                        </li>
+                        <li>
+                            <a>Apps Development</a>
+                        </li>
+                        <li>
+                            <a>Outsourcing</a>
+                        </li>
                     </ul>
                 </details>
             </li>
             <li>
                 <details class="dropdown group">
-                    <summary class="btn border-none min-h-0 h-auto font-bold text-[18px] flex items-center gap-2">
+                    <summary class="btn border-none min-h-0 h-auto font-bold text-[18px] flex items-center gap-2 px-0">
                         <span>
-                            Solutions
+                            Solution
                         </span>
                         <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
                     </summary>
-                    <ul class="menu dropdown-content bg-white rounded-box z-[1] w-52 p-2 shadow text-black">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
+                    <ul class="menu dropdown-content rounded-box z-[1] w-52 p-2 shadow text-white bg-primary pt-10">
+                        <li>
+                            <a>e-Governance</a>
+                        </li>
+                        <li>
+                            <a>ERP</a>
+                        </li>
+                        <li>
+                            <a>Managed IT</a>
+                        </li>
+                        <li>
+                            <a>Innovation</a>
+                        </li>
+                        <li>
+                            <a>Data Science</a>
+                        </li>
                     </ul>
                 </details>
             </li>
             <li>
                 <details class="dropdown group">
-                    <summary class="btn border-none min-h-0 h-auto font-bold text-[18px] flex items-center gap-2">
+                    <summary class="btn border-none min-h-0 h-auto font-bold text-[18px] flex items-center gap-2 px-0">
                         <span>
                             About us
                         </span>
                         <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
                     </summary>
-                    <ul class="menu dropdown-content bg-white rounded-box z-[1] w-52 p-2 shadow text-black">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
+                    <ul class="menu dropdown-content rounded-box z-[1] w-52 p-2 shadow text-white bg-primary pt-10 right-2">
+                        <li>
+                            <a>About us</a>
+                        </li>
+                        <li>
+                            <a>Partner</a>
+                        </li>
+                        <li>
+                            <a>Contact</a>
+                        </li>
                     </ul>
                 </details>
             </li>

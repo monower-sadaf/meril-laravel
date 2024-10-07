@@ -38,7 +38,7 @@
                          </div>
                     </div>
                     <div>
-                        <h3 class="font-semibold text-[15px] lg:text-[22px] text-white pb-[10px]">IT Services</h3>
+                        <h3 class="font-semibold text-[15px] lg:text-[22px] text-white pb-[10px]">Service</h3>
                         <ul class="flex flex-col gap-4">
                             <li>
                                 <a href="#" class="text-white text-[14px] lg:text-[20px]">
@@ -68,7 +68,37 @@
                         </ul>
                     </div>
                     <div>
-                        <h3 class="font-semibold text-[15px] lg:text-[22px] text-white pb-[10px]">Company</h3>
+                        <h3 class="font-semibold text-[15px] lg:text-[22px] text-white pb-[10px]">Solution</h3>
+                        <ul class="flex flex-col gap-4">
+                            <li>
+                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                    e-Governance
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                    ERP
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                    Managed IT
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                    Innovation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                    Data Science
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-[15px] lg:text-[22px] text-white pb-[10px]">About us</h3>
                         <ul class="flex flex-col gap-4">
                             <li>
                                 <a href="#" class="text-white text-[14px] lg:text-[20px]">
@@ -77,44 +107,19 @@
                             </li>
                             <li>
                                 <a href="#" class="text-white text-[14px] lg:text-[20px]">
-                                    Careers
+                                    Why us
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="text-white text-[14px] lg:text-[20px]">
-                                    Partners
+                                    Contact
                                 </a>
                             </li>
-                            <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
-                                    Contact Us
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="font-semibold text-[15px] lg:text-[22px] text-white pb-[10px]">Consulting</h3>
-                        <ul class="flex flex-col gap-4">
-                            <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
-                                    Overview
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
-                                    Assessments
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
-                                    Management
-                                </a>
-                            </li>
-                            <li>
+                            <!-- <li>
                                 <a href="contact.html" class="text-white text-[14px] lg:text-[20px]">
                                     Contact Us
                                 </a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <div>
