@@ -37,7 +37,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark navbar-theme-primary fixed-top headroom">
         <div class="container position-relative">
             <a class="navbar-brand mr-lg-3" href="{{route('/')}}">
-                <img class="navbar-brand-dark" src="assets/img/merilsoft_logo_1.png" alt="menuimage" width="50" height="50">
+                <img class="navbar-brand-dark" src="{{ asset('images/logo.png') }}" alt="menuimage" width="50" height="50">
                 <!--<img class="navbar-brand-light" src="assets/img/logo-color.png" alt="menuimage">-->
                 
                 <!--<img src="assets/img/logo-white.png" class="mr-3" alt="Footer logo">-->
@@ -60,7 +60,7 @@
                 <ul class="navbar-nav navbar-nav-hover">
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="{{route('software')}}">Software Development</a>
+                        <a class="nav-link" href="{{route('service')}}">Software Development</a>
                     </li>
 
                     <li class="nav-item">

@@ -1,7 +1,7 @@
 <div class="bg-white py-1">
-    <div class="container mx-auto px-2 lg:px-12 flex justify-end">
-        <div class="flex items-center gap-8">
-            <a href="tel:+1-718-809-2244" class="flex items-center gap-2 text-[15px]">
+    <div class="container mx-auto px-2 lg:px-12 flex  justify-end">
+        <div class="flex items-center gap-8 md:flex-col lg:flex-row lg:gap-16">
+            <a href="tel:+1-718-809-2244" class="flex items-center gap-2 text-[15px] lg:text-[20px]">
                 <svg class="w-4 h-4 fill-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
                 <span>
                     +1-718-809-2244
@@ -18,7 +18,7 @@
 </div>
 <nav class="bg-primary py-2">
     <div class="container mx-auto px-2 lg:px-12 flex justify-between items-center">
-        <a href="#">
+        <a href="{{ route('/') }}">
             <img src="{{ asset('images/logo.png') }}" alt="logo" class="w-[3.5em] h-[3em] lg:w-[5.5em] lg:h-[4.4375em]" />
         </a>
 
@@ -33,22 +33,22 @@
                     </summary>
                     <ul class="menu dropdown-content rounded-box z-[1] w-52 p-2 shadow text-white bg-primary pt-10">
                         <li>
-                            <a href="{{ route('software') }}">Website Development</a>
+                            <a href="{{route('service')}}">Website Development</a>
                         </li>
                         <li>
-                            <a href="{{ route('software') }}">Cloud and Hosting </a>
+                            <a href="{{route('service')}}">Cloud and Hosting </a>
                         </li>
                         <li>
-                            <a href="{{ route('software') }}">Digital Marketing</a>
+                            <a href="{{route('service')}}">Digital Marketing</a>
                         </li>
                         <li>
-                            <a href="{{ route('software') }}">Software Development</a>
+                            <a href="{{route('service')}}">Software Development</a>
                         </li>
                         <li>
-                            <a href="{{ route('software') }}">Apps Development</a>
+                            <a href="{{route('service')}}">Apps Development</a>
                         </li>
                         <li>
-                            <a href="{{ route('software') }}">Outsourcing</a>
+                            <a href="{{route('service')}}">Outsourcing</a>
                         </li>
                     </ul>
                 </details>
@@ -124,22 +124,22 @@
                 </summary>
                 <ul class="menu dropdown-content bg-white rounded-box z-[1] w-52 p-2 shadow text-black">
                     <li>
-                        <a href="{{ route('software') }}">Website Development</a>
+                        <a href="{{route('service')}}">Website Development</a>
                     </li>
                     <li>
-                        <a href="{{ route('software') }}">Cloud and Hosting </a>
+                        <a href="{{route('service')}}">Cloud and Hosting </a>
                     </li>
                     <li>
-                        <a href="{{ route('software') }}">Digital Marketing</a>
+                        <a href="{{route('service')}}">Digital Marketing</a>
                     </li>
                     <li>
-                        <a href="{{ route('software') }}">Software Development</a>
+                        <a href="{{route('service')}}">Software Development</a>
                     </li>
                     <li>
-                        <a href="{{ route('software') }}">Apps Development</a>
+                        <a href="{{route('service')}}">Apps Development</a>
                     </li>
                     <li>
-                        <a href="{{ route('software') }}">Outsourcing</a>
+                        <a href="{{route('service')}}">Outsourcing</a>
                     </li>
                 </ul>
             </details>

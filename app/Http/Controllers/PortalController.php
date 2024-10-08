@@ -24,6 +24,6 @@ class PortalController extends Controller
     }
     public function contact_us()
     {
-        return view('portal\contact-us');
+        return view('portal.contact-us');
     }
 }

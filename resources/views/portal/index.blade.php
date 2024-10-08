@@ -268,7 +268,7 @@
         </div>
 
 
-    <section class="container mx-auto px-2 lg:px-12 flex flex-col items-center justify-center pb-[33px]">
+    {{-- <section class="container mx-auto px-2 lg:px-12 flex flex-col items-center justify-center pb-[33px]">
         <h3 class="text-center text-[35px] font-semibold text-black pb-[15px]">Why did you leave this rating?</h3>
         <div class="flex justify-center items-center gap-3 pb-[15px]">
             <img src="{{ asset('images/star.png') }}" class="w-[36px]" alt="MerilSoft">
@@ -284,7 +284,7 @@
                 <button class="bg-primary text-white px-4 py-2 rounded">Submit</button>
             </div>
         </form>
-    </section>
+    </section> --}}
 
 
     <!-- <section class="container mx-auto px-2 lg:px-12 pb-[44px]">
@@ -335,11 +335,11 @@
 
     <div class="bg-[#F3F5FF]">
         <div  class="container mx-auto px-2 lg:px-12 grid grid-cols-2 lg:grid-cols-5 justify-items-center gap-4 lg:gap-0 py-5">
-            <img class="w-[95px]" src="{{ asset('images/scout.png') }}" alt="image">
-            <img class="w-[85px]" src="{{ asset('images/pm.png') }}" alt="image">
-            <img class="w-[87px]" src="{{ asset('images/govt.png') }}" alt="image">
-            <img class="w-[100px]" src="{{ asset('images/ict.png') }}" alt="image">
-            <img class="w-[75px]" src="{{ asset('images/undp.png') }}" alt="image">
+            <img class="w-[95px]" src="{{ asset('images/scout2.png') }}" alt="image">
+            <img class="w-[85px]" src="{{ asset('images/bcct.png') }}" alt="image">
+            <img class="w-[87px]" src="{{ asset('images/govt2.png') }}" alt="image">
+            <img class="w-[100px]" src="{{ asset('images/ict2.png') }}" alt="image">
+            <img class="w-[75px]" src="{{ asset('images/a2i.png') }}" alt="image">
         </div>
     </div>
 @endsection
