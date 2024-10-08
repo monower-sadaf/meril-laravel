@@ -19,49 +19,40 @@
                          </div> -->
                          <div class="flex items-center lg:items-start gap-2 pb-5">
                             <img class="w-[20px] mt-1" src="{{ asset('images/mail.png') }}" alt="image">
-                            <p class="text-white text-[14px] lg:text-[16px]">contact@merilsoft.com</p>
+                            <p class="text-white lg:max-w-[171px] text-[14px] lg:text-[16px]">contact@merilsoft.com</p>
                          </div>
 
-                         <div class="flex items-center gap-5">
-                            <a href="#">
+                         <div class="flex items-center gap-5 " style="place-content: center;">
+                            <a href="#" class="flex items-center gap-2">
                                 <img class="w-[37px]" src="{{ asset('images/fb.png') }}" alt="image">
-                            </a>
-                            <a href="#">
-                                <img class="w-[37px]" src="{{ asset('images/instagram.png') }}" alt="image">
-                            </a>
-                            <a href="#">
-                                <img class="w-[37px]" src="{{ asset('images/x.png') }}" alt="image">
-                            </a>
-                            <a href="#">
-                                <img class="w-[37px]" src="{{ asset('images/youtube.png') }}" alt="image">
                             </a>
                          </div>
                     </div>
                     <div>
                         <h3 class="font-semibold text-[15px] lg:text-[22px] text-white pb-[10px]">Service</h3>
-                        <ul class="flex flex-col gap-4">
+                        <ul class="flex flex-col gap-4 text-white text-[14px] lg:text-[16px]">
                             <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                <a href="#">
                                     Website Development
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                <a href="#">
                                     Mobile app development
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                <a href="#">
                                     Social Media Marketing
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                <a href="#">
                                     Cloud & Hosting
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                <a href="#">
                                     ERP
                                 </a>
                             </li>
@@ -69,29 +60,29 @@
                     </div>
                     <div>
                         <h3 class="font-semibold text-[15px] lg:text-[22px] text-white pb-[10px]">Solution</h3>
-                        <ul class="flex flex-col gap-4">
+                        <ul class="flex flex-col gap-4 text-white text-[14px] lg:text-[16px]">
                             <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                <a href="#">
                                     e-Governance
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                <a href="#">
                                     ERP
                                 </a>
                             </li>
                             <!-- <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                <a href="#">
                                     Managed IT
                                 </a>
                             </li> -->
                             <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                <a href="#">
                                     Innovation
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                <a href="#">
                                     Data Science
                                 </a>
                             </li>
@@ -99,38 +90,40 @@
                     </div>
                     <div>
                         <h3 class="font-semibold text-[15px] lg:text-[22px] text-white pb-[10px]">About us</h3>
-                        <ul class="flex flex-col gap-4">
+                        <ul class="flex flex-col gap-4 text-white text-[14px] lg:text-[16px]">
                             <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                <a href="#">
                                     About us
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                <a href="#">
                                     Why us
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="text-white text-[14px] lg:text-[20px]">
+                                <a href="#">
                                     Contact
                                 </a>
                             </li>
                             <!-- <li>
-                                <a href="contact.html" class="text-white text-[14px] lg:text-[20px]">
+                                <a href="contact.html">
                                     Contact Us
                                 </a>
                             </li> -->
                         </ul>
                     </div>
                     <div>
-                        <h3 class="font-semibold text-[15px] lg:text-[22px] text-white pb-[10px] text-center">Partner</h3>
-                        <img class="w-[150px] lg:w-[200px] mx-auto" src="{{ asset('images/mysoft_logo.png') }}" alt="image">
+                        <a href="https://mysoftheaven.com/">
+                            <h3 class="font-semibold text-[15px] lg:text-[22px] text-white pb-[10px] text-center">Partner</h3>
+                            <img class="w-[150px] lg:w-[200px] mx-auto" src="{{ asset('images/mysoft_logo.png') }}" alt="image">
+                        </a>
                     </div>
                 </div>
                 <div class="flex flex-col lg:flex-row items-center justify-center gap-3 text-white font-semibold py-3">             
                     <p class="text-[14px] lg:text-[16px]">© 2024 Merilsoft. All rights reserved </p>
                     <div class="bg-white w-px h-5 hidden lg:block"></div>
-                    <p class="text-[14px] lg:text-[16px]">Terms & Conditions </p>
+                    <p class="text-[14px] lg:text-[16px]"><a href="{{ route('terms_and_conditions') }}">Terms & Conditions </a></p>
                     <div class="bg-white w-px h-5 hidden lg:block"></div>
                     <p class="text-[14px] lg:text-[16px]">Privacy Policy</p>
                     <div class="bg-white w-px h-5 hidden lg:block"></div>

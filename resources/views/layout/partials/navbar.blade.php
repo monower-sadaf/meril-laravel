@@ -19,19 +19,30 @@
 <nav class="bg-primary py-2">
     <div class="container mx-auto px-2 lg:px-12 flex justify-between items-center">
         <a href="{{ route('/') }}">
-            <img src="{{ asset('images/logo.png') }}" alt="logo" class="w-[3.5em] h-[3em] lg:w-[5.5em] lg:h-[4.4375em]" />
+            <img src="{{ asset('images/logo2.png') }}" alt="logo" class="w-[3.5em] h-[3.5em] lg:w-[5.5em] lg:h-[5.5em]" />
         </a>
 
         <ul class=" gap-12 font-bold text-white text-[18px] hidden lg:flex">
             <li>
+                <a href="{{ route('/') }}">
+                    <details class="dropdown group"  onclick="window.location.href='{{ route('/') }}'">
+                        <summary  onclick="window.location.href='{{ route('/') }}'" class="btn border-none min-h-0 h-auto font-bold text-[18px] flex items-center gap-2 px-0">
+                            <span onclick="window.location.href='{{ route('/') }}'">
+                                Home
+                            </span>
+                        </summary>
+                    </details>
+                </a>
+            </li>
+            <li>
                 <details class="dropdown group">
                     <summary class="btn border-none min-h-0 h-auto font-bold text-[18px] flex items-center gap-2 px-0">
-                        <span>
+                        <span onclick="window.location.href='{{route('service')}}'">
                             Service
                         </span>
-                        <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                        {{-- <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg> --}}
                     </summary>
-                    <ul class="menu dropdown-content rounded-box z-[1] w-52 p-2 shadow text-white bg-primary pt-10">
+                    {{-- <ul class="menu dropdown-content rounded-box z-[1] w-52 p-2 shadow text-white bg-primary pt-10">
                         <li>
                             <a href="{{route('service')}}">Website Development</a>
                         </li>
@@ -50,18 +61,19 @@
                         <li>
                             <a href="{{route('service')}}">Outsourcing</a>
                         </li>
-                    </ul>
+                    </ul> --}}
                 </details>
             </li>
+            
             <li>
                 <details class="dropdown group">
                     <summary class="btn border-none min-h-0 h-auto font-bold text-[18px] flex items-center gap-2 px-0">
-                        <span>
+                        <span onclick="window.location.href='{{ route('marketing') }}'">
                             Solution
                         </span>
-                        <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                        {{-- <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg> --}}
                     </summary>
-                    <ul class="menu dropdown-content rounded-box z-[1] w-52 p-2 shadow text-white bg-primary pt-10">
+                    {{-- <ul class="menu dropdown-content rounded-box z-[1] w-52 p-2 shadow text-white bg-primary pt-10">
                         <li>
                             <a href="{{ route('marketing') }}">e-Governance</a>
                         </li>
@@ -77,7 +89,7 @@
                         <li>
                             <a href="{{ route('marketing') }}">Data Science</a>
                         </li>
-                    </ul>
+                    </ul> --}}
                 </details>
             </li>
             <li>
@@ -93,7 +105,10 @@
                             <a href="{{ route('about_us') }}">About us</a>
                         </li>
                         <li>
-                            <a href="#">Partner</a>
+                            <a href="{{ route('partner') }}">Partner</a>
+                        </li>
+                        <li>
+                            <a href="{{ route('why_us') }}">Why Us</a>
                         </li>
                         <li>
                             <a href="{{ route('contact_us') }}">Contact</a>
@@ -117,12 +132,39 @@
         <li>
             <details class="dropdown group">
                 <summary class="btn border-none min-h-0 h-auto font-bold text-[18px] flex items-center gap-2">
-                    <span>
+                    <span onclick="window.location.href='{{ route('/') }}'">
+                        Home
+                    </span>
+                    {{-- <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg> --}}
+                </summary>
+                {{-- <ul class="menu dropdown-content bg-white rounded-box z-[1] w-52 p-2 shadow text-black">
+                    <li>
+                        <a href="{{ route('marketing') }}">e-Governance</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('marketing') }}">ERP</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('marketing') }}">Managed IT</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('marketing') }}">Innovation</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('marketing') }}">Data Science</a>
+                    </li>
+                </ul> --}}
+            </details>
+        </li>
+        <li>
+            <details class="dropdown group">
+                <summary class="btn border-none min-h-0 h-auto font-bold text-[18px] flex items-center gap-2">
+                    <span onclick="window.location.href='{{route('service')}}'">
                         Services
                     </span>
-                    <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                    {{-- <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg> --}}
                 </summary>
-                <ul class="menu dropdown-content bg-white rounded-box z-[1] w-52 p-2 shadow text-black">
+                {{-- <ul class="menu dropdown-content bg-white rounded-box z-[1] w-52 p-2 shadow text-black">
                     <li>
                         <a href="{{route('service')}}">Website Development</a>
                     </li>
@@ -141,18 +183,18 @@
                     <li>
                         <a href="{{route('service')}}">Outsourcing</a>
                     </li>
-                </ul>
+                </ul> --}}
             </details>
         </li>
         <li>
             <details class="dropdown group">
                 <summary class="btn border-none min-h-0 h-auto font-bold text-[18px] flex items-center gap-2">
-                    <span>
+                    <span onclick="window.location.href='{{ route('marketing') }}'">
                         Solutions
                     </span>
-                    <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+                    {{-- <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg> --}}
                 </summary>
-                <ul class="menu dropdown-content bg-white rounded-box z-[1] w-52 p-2 shadow text-black">
+                {{-- <ul class="menu dropdown-content bg-white rounded-box z-[1] w-52 p-2 shadow text-black">
                     <li>
                         <a href="{{ route('marketing') }}">e-Governance</a>
                     </li>
@@ -168,7 +210,7 @@
                     <li>
                         <a href="{{ route('marketing') }}">Data Science</a>
                     </li>
-                </ul>
+                </ul> --}}
             </details>
         </li>
         <li>
@@ -184,7 +226,10 @@
                         <a href="{{ route('about_us') }}">About us</a>
                     </li>
                     <li>
-                        <a href="#">Partner</a>
+                        <a href="{{ route('partner') }}">Partner</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('why_us') }}">Why Us</a>
                     </li>
                     <li>
                         <a href="{{ route('contact_us') }}">Contact</a>
@@ -197,7 +242,7 @@
 
 
 <div class="fixed bottom-36 right-5 z-50">
-    <a href="#">
+    <a terget="_blank" href="https://wa.me/+8801678001080?text=I'm%20interested%20in%20your%20services">
         <img class="w-[70px]" src="{{ asset('images/support.png') }}" alt="MerilSoft">
     </a>
 </div>

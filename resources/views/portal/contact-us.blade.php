@@ -1,332 +1,173 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--favicon icon-->
-    <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
 
-    <!--title-->
-    <title>Contact Us - Corporate and Business HTML Template</title>
+@extends('layout.portal_layout')
 
+@section('content')
+<style>
+    .robot {    
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.box-container {
+    display: flex;
+    background-color: #F9F9F9;
+    border: 1px solid #D3D3D3;
+    border-radius: 3px;
+    width: 300px;
+    align-items: center;
+    padding: 10px 0px 10px 0px;
+}
+
+input[type="checkbox"] {
+    appearance: none;    
+    width: 26px;
+    height: 26px;    
+    border: 2px solid #C1C1C1;
+    margin: 0px 14px 0px 14px;
+}
+
+input[type="checkbox"]:checked::before {
+    content: url(https://img.icons8.com/?size=20&id=27&format=png&color=1e5180);
+    display: block;    
+    line-height: 20px;
+    padding: 0.05rem 0.6rem 0rem 0.05em;
+}
+
+.logo {    
+    display: block;
+    margin-left: 65%;
+}
+
+.logo-text {
+    text-align: right;
+    font-size: 9px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo-text-tos {
+    display: block;
+    text-align: right;
+    font-size: 9px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 80px;
+}
+
+.container {
+    margin-right: 10px;
+    text-align: center;
+    line-height: 0.1rem;
+}
+</style>
     <!--build:css-->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- endbuild -->
-</head>
-
-<body>
-
-    <!--preloader start-->
-    <div id="preloader">
-        <div class="loader1">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    <!--preloader end-->
-    <!--header section start-->
-    <header class="header position-relative z-9">
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-theme-primary fixed-top headroom">
-            <div class="container position-relative">
-                <a class="navbar-brand mr-lg-3" href="{{route('/')}}">
-                    <img class="navbar-brand-dark" src="{{ asset('images/logo.png') }}" alt="menuimage" width="50" height="50">
-                    <!--<img class="navbar-brand-light" src="assets/img/logo-color.png" alt="menuimage">-->
-                    
-                    <!--<img src="assets/img/logo-white.png" class="mr-3" alt="Footer logo">-->
-                </a>
-                <div class="navbar-collapse collapse" id="navbar-default-primary">
-                    <div class="navbar-collapse-header">
-                        <div class="row">
-                            <div class="col-6 collapse-brand">
-                                <a href="index.html">
-                                    <img src="assets/img/logo-color.png" alt="menuimage">
-                                </a>
-                            </div>
-                            <div class="col-6 collapse-close">
-                                <i class="fas fa-times" data-toggle="collapse" role="button"
-                                   data-target="#navbar-default-primary" aria-controls="navbar-default-primary"
-                                   aria-expanded="false" aria-label="Toggle navigation"></i>
-                            </div>
-                        </div>
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}"> --}}
+    <div class="main">
+        <section class="bg-no-repeat bg-center bg-cover h-[300px] lg:h-[10.4375em] md:h-[3em]" style="background-image: url({{ asset('assets/img/header-bg-5.jpg')}})">
+            <div class="h-full bg-gradient-to-r from-[rgba(15,39,122,0.80)] to-[rgba(201,26,96,0.80)]">
+                <div class="container mx-auto h-full flex items-center justify-center">
+                    <div class="text-center">
+                        <h1 class="text-4xl font-bold text-white">Contact us - Empower Your Business</h1>
                     </div>
-                    <ul class="navbar-nav navbar-nav-hover">
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('service')}}">Software Development</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('marketing')}}">Marketing Services</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">IT Consultancy</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                                <span class="nav-link-inner-text">About</span>
-                                <i class="fas fa-angle-down nav-link-arrow ml-1"></i>
-                            </a>
-                             <ul class="sub-menu dropdown-menu">
-                                <li><a class="dropdown-item" href="{{route('about_us')}}">About Us</a></li>
-                                <li><a class="dropdown-item" href="#">News</a></li>
-                                <li><a class="dropdown-item" href="#">Careers</a></li>
-                                <li><a class="dropdown-item" href="{{route('contact_us')}}">Contact</a></li>
-        
-                             </ul>
-                        </li>
-                        <!--<li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>-->
-                    </ul>
                 </div>
-                <div class="d-flex align-items-center">
-                    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar-default-primary" aria-controls="navbar-default-primary" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+            </div>
+        </section>
+        <section class="pb-12 md:pb-20 pt-12 md:pt-20 mx-auto" style="margin-bottom: 32px;">
+            <h3 class="text-center text-3xl font-semibold text-black pb-10 md:pb-16" style="margin-top: 26px;">Contact us</h3>
+            <form class="space-y-4 md:space-y-6  rounded-md" style="max-width: 35%;margin: 20px auto;padding: 37px;box-shadow: 0px 0px 5px 1px #939393;" id="contact-form">
+                <div class="flex flex-col md:flex-row">
+                    <div class="w-full md:w-1/2 md:pr-4">
+                        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary" />
+                    </div>
+                    <div class="w-full mt-4 md:mt-0 md:pl-4 md:w-1/2">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary" />
+                    </div>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"></textarea>
+                </div>
+                <div class="flex flex-col" style="margin: 11px 0px;">
+                    <div class="box-container">
+                        <input type="checkbox">
+                        <p class="robot">I'm not a robot</p>
+                          <div>
+                            <div class="container" style="line-height: 12px;">
+                              <div class="logo">
+                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30.0906 14.9789C30.0899 14.7631 30.0849 14.5485 30.0753 14.335V2.15984L26.7093 5.52576C23.9545 2.15375 19.7637 0 15.0697 0C10.1847 0 5.84492 2.33169 3.10156 5.94269L8.61873 11.5179C9.15941 10.5179 9.92751 9.65906 10.8536 9.01039C11.8168 8.25873 13.1816 7.64415 15.0695 7.64415C15.2976 7.64415 15.4736 7.6708 15.603 7.72101C17.9421 7.90563 19.9696 9.19653 21.1635 11.0702L17.2581 14.9755C22.2047 14.9561 27.7928 14.9447 30.0902 14.978" fill="#1C3AA9"/>
+                                <path d="M14.9789 0.000610352C14.7631 0.00131601 14.5485 0.00633868 14.335 0.0159818H2.15983L5.52576 3.38191C2.15375 6.13673 0 10.3275 0 15.0216C0 19.9065 2.33173 24.2463 5.94269 26.9897L11.5179 21.4725C10.5179 20.9318 9.65906 20.1637 9.01039 19.2376C8.25877 18.2744 7.64415 16.9096 7.64415 15.0217C7.64415 14.7937 7.6708 14.6176 7.72101 14.4883C7.90563 12.1492 9.19653 10.1216 11.0702 8.92779L14.9755 12.8331C14.9561 7.88654 14.9447 2.29845 14.978 0.00103747" fill="#4285F4"/>
+                                <path d="M0 15.0211C0.00072284 15.2369 0.00569389 15.4514 0.0153656 15.665V27.8402L3.38129 24.4742C6.13611 27.8462 10.3269 30 15.021 30C19.9059 30 24.2457 27.6683 26.9891 24.0573L21.4719 18.4821C20.9312 19.4821 20.1631 20.3409 19.237 20.9896C18.2738 21.7413 16.909 22.3558 15.0211 22.3558C14.7931 22.3558 14.617 22.3292 14.4877 22.279C12.1486 22.0944 10.121 20.8035 8.92718 18.9298L12.8325 15.0245C7.88593 15.0439 2.29784 15.0553 0.000429605 15.022" fill="#ABABAB"/>
+                                </svg>
+                                  <div class="logo-text">
+                                    <p>reCAPTCHA</p>            
+                                  </div>            
+                              </div>
+                              <p class="logo-text-tos">Privacy - Terms</p>
+                            </div>
+                          </div>    
+                      </div>
+                </div>
+                <div class="flex justify-end mt-4">
+                    <button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                        Send
                     </button>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <!--header section end-->
+            </form>
 
-    <div class="main">
+            <script>
+                document.querySelector('#contact-form').addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const form = e.target;
+                    const formData = new FormData(form);
+                    const isDemoUser = formData.get('demo-checkbox') === 'on';
 
-        <!--page header section start-->
-        <section class="" style="background: url('assets/img/slider-img-4.jpg')no-repeat center center / cover">
-            <div class="section-lg bg-gradient-primary text-white section-header">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8 col-lg-7">
-                            <div class="page-header-content text-center">
-                                <h1>Contact US</h1>
-                                <nav aria-label="breadcrumb" class="d-flex justify-content-center">
-                                    <ol class="breadcrumb breadcrumb-transparent breadcrumb-text-light">
-                                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Contact US</li>
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                    if (isDemoUser) {
+                        alert('Thank you for contacting us');
+                        return;
+                    }
+
+                    fetch('/contact-us', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            alert('Thank you for contacting us');
+                        } else {
+                            alert('Sorry, something went wrong');
+                        }
+                    })
+                    .catch(error => {
+                        console.error(error);
+                    });
+                });
+            </script>
         </section>
-        <!--page header section end-->
 
-        <!--promo section start-->
-        <section class="section section-lg pb-0">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-md-4 mb-lg-0">
-                        <div class="rounded-custom text-center shadow-sm">
-                            <div class="card-body py-5">
-                                <div class="icon icon-md text-secondary">
-                                    <i class="ti-mobile"></i>
-                                </div>
-                                <div>
-                                    <h5 class="h6">Call Us</h5>
-                                    <p class="text-muted mb-0">+123 456-78900</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-md-4 mb-lg-0">
-                        <div class="rounded-custom text-center shadow-sm">
-                            <div class="card-body py-5">
-                                <div class="icon icon-md text-secondary">
-                                    <i class="ti-location-pin"></i>
-                                </div>
-                                <div>
-                                    <h5 class="h6">Visit Us</h5>
-                                    <p class="text-muted mb-0">New York, CA N310</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-md-4 mb-lg-0">
-                        <div class="rounded-custom text-center shadow-sm">
-                            <div class="card-body py-5">
-                                <div class="icon icon-md text-secondary">
-                                    <i class="ti-email"></i>
-                                </div>
-                                <div>
-                                    <h5 class="h6">Mail Us</h5>
-                                    <p class="text-muted mb-0">help@yourdomain.com</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 mb-4 mb-md-4 mb-lg-0">
-                        <div class="rounded-custom text-center shadow-sm">
-                            <div class="card-body py-5">
-                                <div class="icon icon-md text-secondary">
-                                    <i class="ti-headphone-alt"></i>
-                                </div>
-                                <div>
-                                    <h5 class="h6">Live Chat</h5>
-                                    <p class="text-muted mb-0">Chat with Us 24/7</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--promo section end-->
 
-        <!--contact us section start-->
-        <section class="section section-lg">
-            <div class="container contact">
-                <div class="col-12 pb-3 message-box d-none">
-                    <div class="alert alert-danger"></div>
-                </div>
-                <div class="row justify-content-around">
-                    <div class="col-md-6">
-                        <div class="contact-us-form bg-soft rounded p-5">
-                            <h4>Ready to get started?</h4>
-                            <form action="#" method="POST" id="contactForm" class="contact-us-form mt-4">
-                                <div class="form-row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="name" placeholder="Enter name" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email" placeholder="Enter email" required="required">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <textarea name="message" id="message" class="form-control" rows="7" cols="25" placeholder="Message"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-12 mt-3">
-                                        <button type="submit" class="btn btn-secondary" id="btnContactUs">
-                                            Send Message
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="contact-us-content">
-                            <h2>Looking for a excellent Business idea?</h2>
-                            <p class="lead">Seamlessly deliver pandemic e-services and next-generation initiatives.</p>
-
-                            <a href="#" class="btn btn-outline-secondary align-items-center">Get Directions <span class="ti-arrow-right pl-2"></span></a>
-
-                            <hr class="my-5">
-
-                            <h5>Our Headquarters</h5>
-                            <address>
-                                100 Yellow House, Mn <br>
-                                Factory, United State, 13420
-                            </address>
-                            <br>
-                            <span>Phone: +1234567890123</span> <br>
-                            <span>Email: <a href="mailto:email@yourdomain.com" class="link-color">email@yourdomain.com</a></span>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--contact us section end-->
-
-        <!--contact map section start-->
-        <div class="section py-0">
-            <div class="google-map mb-n2 opacity-9 w-100">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543450937!2d144.953735315922!3d-37.817323442021234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sbd!4v1571030260624!5m2!1sen!2sbd" height="450" style="border:0;" allowfullscreen=""></iframe>
+        <div class="container mx-auto px-2 lg:px-12">
+            <h3 class="font-semibold text-[16px] lg:text-[30px] leading-[37px] text-primary text-center pb-[25px] lg:pb-[47px]">Trusted by over 500+ customers<span style="font-size: 25px;">*</span>...</h3>
+        </div>
+    
+        <div class="bg-[#F3F5FF]">
+            <div  class="container mx-auto px-2 lg:px-12 grid grid-cols-2 lg:grid-cols-5 justify-items-center gap-4 lg:gap-0 py-5">
+                <img class="w-[95px]" src="{{ asset('images/scout3.png') }}" alt="image">
+                <img class="w-[85px]" src="{{ asset('images/bcct2.png') }}" alt="image">
+                <img class="w-[87px]" src="{{ asset('images/govt3.png') }}" alt="image">
+                <img class="w-[100px]" src="{{ asset('images/ict3.png') }}" alt="image">
+                <img class="w-[75px]" src="{{ asset('images/a2i2.png') }}" alt="image">
             </div>
         </div>
-        <!--contact map section end-->
-
-
     </div>
 
-    <!--footer section start-->
-    <footer class="footer-wrap">
-        <div class="footer footer-top section section-md bg-primary text-white">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-lg-4 mb-4">
-                        <a class="footer-brand mr-lg-5 d-flex" href="index.html">
-                            <img src="assets/img/logo-white.png" class="mr-3" alt="Footer logo">
-                        </a>
-                        <p class="my-4">Interactively unleash interactive best practices before technically sound portals.</p>
-                        <div class="btn-wrapper mt-4">
-                            <button class="btn btn-icon-only btn-pill btn-twitter mr-2 icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="40k Followers">
-                                <span aria-hidden="true" class="fab fa-twitter"></span>
-                            </button>
-                            <button class="btn btn-icon-only btn-pill btn-facebook mr-2 icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="50k Like">
-                                <span aria-hidden="true" class="fab fa-facebook-f"></span>
-                            </button>
-                            <button class="btn btn-icon-only btn-pill btn-youtube mr-2 icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="25k Subscribe">
-                                <span aria-hidden="true" class="fab fa-youtube"></span>
-                            </button>
-                            <button class="btn btn-icon-only btn-pill btn-dribbble icon icon-xs icon-shape" type="button" data-toggle="tooltip" data-placement="top" title="" data-original-title="2k Project">
-                                <span aria-hidden="true" class="fab fa-dribbble"></span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                        <h5 class="mb-4">Company</h5>
-                        <ul class="links-vertical">
-                            <li><a target="_blank" href="#">About Us</a></li>
-                            <li><a target="_blank" href="#">Careers</a></li>
-                            <li><a target="_blank" href="#">Customers</a></li>
-                            <li><a target="_blank" href="#">Community</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                        <h5 class="mb-4">Resources</h5>
-                        <ul class="links-vertical">
-                            <li><a target="_blank" href="#">Help</a></li>
-                            <li><a target="_blank" href="#">Events</a></li>
-                            <li><a target="_blank" href="#">Live sessions</a></li>
-                            <li><a target="_blank" href="#">Open sources</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 col-lg-2">
-                        <h5 class="mb-4">Support</h5>
-                        <ul class="links-vertical">
-                            <li><a target="_blank" href="#">Help</a></li>
-                            <li><a target="_blank" href="#">Tech Support</a></li>
-                            <li><a target="_blank" href="#">Network Status</a></li>
-                            <li><a target="_blank" href="#">Contact Support</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer py-3 bg-primary text-white border-top border-variant-default">
-            <div class="container">
-                <div class="row">
-                    <div class="col p-3">
-                        <div class="d-flex text-center justify-content-center align-items-center">
-                            <p class="copyright pb-0 mb-0">Copyrights © 2021. All
-                                rights reserved by
-                                <a href="https://themeforest.net/user/themetags" target="_blank">ThemeTags</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--footer section end-->
-    <!--scroll bottom to top button start-->
-    <button class="scroll-top scroll-to-target" data-target="html">
-        <span class="fas fa-hand-point-up"></span>
-    </button>
+
     <!--scroll bottom to top button end-->
     <!--build:js-->
     <script src="{{ asset('assets/js/vendors/jquery-3.5.1.min.js')}}"></script>
@@ -345,6 +186,7 @@
     <script src="{{ asset('assets/js/vendors/validator.min.js')}}"></script>
     <script src="{{ asset('assets/js/app.js')}}"></script>
     <!--endbuild-->
-</body>
 
-</html>
+
+
+    @endsection

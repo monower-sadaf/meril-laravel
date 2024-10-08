@@ -12,17 +12,22 @@
             <div class="h-full bg-gradient-to-r from-[rgba(15,39,122,0.80)] to-[rgba(201,26,96,0.80)]">
                 <div class="container mx-auto h-full flex items-center justify-center">
                     <div class="text-center">
-                        <h1 class="text-4xl font-bold text-white">About us - Empower Your Business</h1>
+                        <h1 class="text-4xl font-bold text-white">Partner - Empower Your Business</h1>
                     </div>
                 </div>
             </div>
         </section>
         <section class="pb-[50px] pt-[50px]" style="text-align: -webkit-center;">
-            <h3 class="text-center text-[35px] font-semibold text-black pb-[30px]">About us</h3>
+            <h3 class="text-center text-[35px] font-semibold text-black pb-[30px]" >Partner</h3>
             <h3 class="text-[16px] lg:text-[18px] text-black w-[80%]" style="width: 60%;text-align: -webkit-center;" >
-                We are focus on empowering our client’s business with the advancement of innovative and cutting-edge technologies. We are in the service mission in associate with our business partners around the globe. 
-                Our business philosophy is to assist our client to develop in their own business. 
-                Our long-experienced and highly skilled experts are committed to our valued by dedicated services. 
+                <p class="text-left" style="font-size: 22px;font-weight: bold;margin-bottom: 10px;">Mysoftheaven (BD) Ltd.</p>
+                <p style="text-align: justify;">Mysoft Heaven (BD) Ltd. offers the complete software product development, lifecycle and support services. We carry 15+ years’ experience in design, develop and maintaining software products and services. We understand in today’s dynamic market, product development requires innovation, creativity as well as speed to deliver. We convert clients’ ‘Product Vision’ into product development
+
+                    The development life cycle is controlled by client inputs and direction. There are no hidden charges or any other additional costs involved. This provides you complete independence and flexibility to get the project developed end-to-end as per your budget provisions. we provide provides knowledgeable, skilled, motivated, energetic and competent consultants who work seamlessly as part of client teams to provide quality solutions. Before any such project begins, we provide you the effort estimates, project timeline, material/resource estimates and other vital figures to help you decide on financials.
+                    
+                    We serve our clients with experienced and highly motivated staff. Our state-of-the-art infrastructure helps us to overcome challenges associated with product development. Our long-lasting engagement with Microsoft, Java, open source and other technology helps us to be on top in the changing technology market place, and enables us to support developed product accessible on cross platform (Window, Linux and Mac)
+                    
+                    Choose Mysoft Heaven (BD) Ltd. as your trusted partner for all your software development needs, and experience excellence, innovation, and unparalleled support every step of the way.</p>
             </h3>
             
         </section>

@@ -1,31 +1,25 @@
 @extends('layout.portal_layout')
 
 @section('content')
+<style>
+   .card_box {
+    box-shadow: -4px -3px 6px 1px #acacac;
+    height: 208px;
+}
+</style>
     <div class="bg-cover bg-center mb-[59px]" style="background-image: url({{ asset('images/hero_image3.png') }});">
         <div class="container mx-auto px-2 lg:px-12 py-16 flex flex-col lg:flex-row lg:justify-between lg:items-end">
             <div class="lg:w-[45%]">
                 <div class="pb-6 lg:pb-11">
                     <h3 class="text-[20px] lg:text-2xl font-bold text-white pb-3 lg:pb-6">Empower Your Business</h3>
-                    <h3 class="text-[16px] lg:text-[22px] text-white">
-                        We simplify complex operations, create meaningful user
-                        experiences, and deliver scalable, enduring business value. Full
-                        spectrum innovation with mobile, web, software, 3D and IoT
-                        technology solutions.
+                    <h3 class="text-[16px] lg:text-[18px] text-white" style="line-height: 32px;">
+                        Technology has an unparalleled ability to transform businesses, from enhancing efficiency to driving innovation. In today’s world, leveraging technology is not just an option but a necessity. Whether through artificial intelligence, data analytics, cloud computing, or automation, businesses can unlock new levels of performance and customer engagement. These tools enable companies to streamline operations, make informed decisions, and offer personalized experiences to their clients.
                     </h3>
                 </div>
-                <div class="pb-[15px] lg:pb-[25px]">
-                    <h3 class="text-[20px] lg:text-2xl font-bold text-white pb-3 lg:pb-6">Transforms businesses through technology:</h3>
-                    <h3 class="text-[16px] lg:text-[22px] text-white">
-                        We help businesses successfully navigate digital transformation
-                        and drive real growth, drawing on the combined power of experience
-                        and contextual knowledge, across a vast ecosystem of expertise.
-                    </h3>
-                </div>
-
-                <a href="contact.html" class=" text-[16px] lg:text-[22px] bg-primary text-white font-bold px-2 py-1 lg:px-4 lg:py-2 rounded">Contact Us</a>
+                <a href="{{ route('contact_us') }}" class=" text-[16px] lg:text-[22px] bg-primary text-white font-bold px-2 py-1 lg:px-4 lg:py-2 rounded">Contact Us</a>
             </div>
-            <a href="#" target="_blank">
-                <img class="w-[8em] h-[5em] lg:w-[16.4375em] lg:h-[9.8125em]" src="{{ asset('images/mysoft_logo.png') }}" alt="my soft logo" />
+            <a href="https://mysoftheaven.com/" target="_blank">
+                <img class="w-[150px] lg:w-[200px] mx-auto" src="{{ asset('images/mysoft_logo.png') }}" alt="my soft logo" />
             </a>
             
         </div>
@@ -96,22 +90,30 @@
     <section class="pb-[85px]">
         <h3 class="text-center text-[35px] font-semibold text-black pb-[47px]">Service</h3>
         <div class="container mx-auto px-2 lg:px-12 grid grid-cols-1 lg:grid-cols-4 gap-8">
-            <div class="bg-[#F2F7FF] p-5 rounded-md flex flex-col justify-center items-center gap-5">
-                <img src="{{ asset('images/web2.png') }}" class="w-[80px]" alt="MerilSoft">
-                <h3 class="text-[20px] font-semibold">Website Development</h3>
-            </div>
-            <div class="bg-[#F2F7FF] p-5 rounded-md flex flex-col justify-center items-center gap-5">
-                <img src="{{ asset('images/cloud2.png') }}" class="w-[80px]" alt="MerilSoft">
-                <h3 class="text-[20px] font-semibold">Cloud & Hosting</h3>
-            </div>
-            <div class="bg-[#F2F7FF] p-5 rounded-md flex flex-col justify-center items-center gap-5">
-                <img src="{{ asset('images/bullhorn2.png') }}" class="w-[80px]" alt="MerilSoft">
-                <h3 class="text-[20px] font-semibold">Digital Marketing</h3>
-            </div>
-            <div class="bg-[#F2F7FF] p-5 rounded-md flex flex-col justify-center items-center gap-5">
-                <img src="{{ asset('images/android2.png') }}" class="w-[80px]" alt="MerilSoft">
-                <h3 class="text-[20px] font-semibold text-center">Apps Development</h3>
-            </div>
+            <a href="{{ route('service') }}">
+                <div  class="bg-[#F2F7FF] card_box p-5 rounded-md flex flex-col justify-center items-center gap-5">
+                    <img src="{{ asset('images/web2.png') }}" class="w-[80px]" alt="MerilSoft">
+                    <h3 class="text-[20px] font-semibold">Website Development</h3>
+                </div>
+            </a>
+            <a href="{{ route('service') }}">
+                <div class="bg-[#F2F7FF] card_box p-5 rounded-md flex flex-col justify-center items-center gap-5">
+                    <img src="{{ asset('images/cloud2.png') }}" class="w-[80px]" alt="MerilSoft">
+                    <h3 class="text-[20px] font-semibold">Cloud & Hosting</h3>
+                </div>
+            </a>
+            <a href="{{ route('service') }}">
+                <div class="bg-[#F2F7FF] card_box p-5 rounded-md flex flex-col justify-center items-center gap-5">
+                    <img src="{{ asset('images/bullhorn2.png') }}" class="w-[80px]" alt="MerilSoft">
+                    <h3 class="text-[20px] font-semibold">Digital Marketing</h3>
+                </div>
+            </a>
+            <a href="{{ route('service') }}">
+                <div class="bg-[#F2F7FF] card_box p-5 rounded-md flex flex-col justify-center items-center gap-5">
+                    <img src="{{ asset('images/android2.png') }}" class="w-[80px]" alt="MerilSoft">
+                    <h3 class="text-[20px] font-semibold text-center">Apps Development</h3>
+                </div>
+            </a>
         </div>
     </section>
 
@@ -119,19 +121,19 @@
     <section class="pb-[85px]">
         <h3 class="text-center text-[35px] font-semibold text-black pb-[47px]">Solution</h3>
         <div class="container mx-auto px-2 lg:px-12 grid grid-cols-1 lg:grid-cols-4 gap-8">
-            <div class="bg-[#F2F7FF] p-5 rounded-md flex flex-col justify-center items-center gap-5">
+            <div class="bg-[#F2F7FF] card_box p-5 rounded-md flex flex-col justify-center items-center gap-5">
                 <img src="{{ asset('images/egov.png') }}" class="w-[80px]" alt="MerilSoft">
                 <h3 class="text-[20px] font-semibold">E-Governance</h3>
             </div>
-            <div class="bg-[#F2F7FF] p-5 rounded-md flex flex-col justify-center items-center gap-5">
+            <div class="bg-[#F2F7FF] card_box p-5 rounded-md flex flex-col justify-center items-center gap-5">
                 <img src="{{ asset('images/erp.png') }}" class="w-[80px]" alt="MerilSoft">
                 <h3 class="text-[20px] font-semibold">ERP</h3>
             </div>
-            <div class="bg-[#F2F7FF] p-5 rounded-md flex flex-col justify-center items-center gap-5">
+            <div class="bg-[#F2F7FF] card_box p-5 rounded-md flex flex-col justify-center items-center gap-5">
                 <img src="{{ asset('images/infra.png') }}" class="w-[80px]" alt="MerilSoft">
                 <h3 class="text-[20px] font-semibold">Managed IT</h3>
             </div>
-            <div class="bg-[#F2F7FF] p-5 rounded-md flex flex-col justify-center items-center gap-5">
+            <div class="bg-[#F2F7FF] card_box p-5 rounded-md flex flex-col justify-center items-center gap-5">
                 <img src="{{ asset('images/pms.png') }}" class="w-[80px]" alt="MerilSoft">
                 <h3 class="text-[20px] font-semibold text-center">Innovation</h3>
             </div>
@@ -147,7 +149,7 @@
                     <div class="pb-3">
                         <svg class="w-10 h-10 fill-gray-100 bg-primary p-2 rounded-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
                     </div>
-                    <p class="text-[#2C2B2B] text-[14px] lg:text-[18px] leading-[30px] pb-3 lg:pb-5">Assertively procrastinate distributed relationships whereas equity invested intellectual capital everything energistically underwhelm proactive.</p>
+                    <p class="text-[#2C2B2B] text-[14px] lg:text-[18px] leading-[30px] pb-3 lg:pb-5">"Wishing your IT team continued success and breakthroughs in technology. May your innovations continue to set new standards, and your dedication inspire excellence in every project. Here's to a future filled with more great accomplishments!".</p>
 
                     <div class="flex flex-col lg:flex-row items-center justify-between gap-3 lg:gap-0">
                         <div class="flex items-center gap-3 lg:w-[40%]">
@@ -330,16 +332,16 @@
 
 
     <div class="container mx-auto px-2 lg:px-12">
-        <h3 class="font-semibold text-[16px] lg:text-[30px] leading-[37px] text-primary text-center pb-[25px] lg:pb-[47px]">Trusted by over 500+ customers*, some of them are here</h3>
+        <h3 class="font-semibold text-[16px] lg:text-[30px] leading-[37px] text-primary text-center pb-[25px] lg:pb-[47px]">Trusted by over 500+ customers<span style="font-size: 25px;">*</span>...</h3>
     </div>
 
     <div class="bg-[#F3F5FF]">
         <div  class="container mx-auto px-2 lg:px-12 grid grid-cols-2 lg:grid-cols-5 justify-items-center gap-4 lg:gap-0 py-5">
-            <img class="w-[95px]" src="{{ asset('images/scout2.png') }}" alt="image">
-            <img class="w-[85px]" src="{{ asset('images/bcct.png') }}" alt="image">
-            <img class="w-[87px]" src="{{ asset('images/govt2.png') }}" alt="image">
-            <img class="w-[100px]" src="{{ asset('images/ict2.png') }}" alt="image">
-            <img class="w-[75px]" src="{{ asset('images/a2i.png') }}" alt="image">
+            <img class="w-[95px]" src="{{ asset('images/scout3.png') }}" alt="image">
+            <img class="w-[85px]" src="{{ asset('images/bcct2.png') }}" alt="image">
+            <img class="w-[87px]" src="{{ asset('images/govt3.png') }}" alt="image">
+            <img class="w-[100px]" src="{{ asset('images/ict3.png') }}" alt="image">
+            <img class="w-[75px]" src="{{ asset('images/a2i2.png') }}" alt="image">
         </div>
     </div>
 @endsection

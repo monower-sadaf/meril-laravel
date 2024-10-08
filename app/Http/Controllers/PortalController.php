@@ -26,4 +26,16 @@ class PortalController extends Controller
     {
         return view('portal.contact-us');
     }
+    public function why_us()
+    {
+        return view('portal.why_us');
+    }
+    public function partner()
+    {
+        return view('portal.partner');
+    }
+    public function terms_and_conditions()
+    {
+        return view('portal.terms_and_conditions');
+    }
 }
