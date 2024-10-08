@@ -335,11 +335,11 @@
 
     <div class="bg-[#F3F5FF]">
         <div  class="container mx-auto px-2 lg:px-12 grid grid-cols-2 lg:grid-cols-5 justify-items-center gap-4 lg:gap-0 py-5">
-            <img class="w-[95px]" src="{{ asset('images/Scout.png') }}" alt="image">
+            <img class="w-[95px]" src="{{ asset('images/scout.png') }}" alt="image">
             <img class="w-[85px]" src="{{ asset('images/pm.png') }}" alt="image">
             <img class="w-[87px]" src="{{ asset('images/govt.png') }}" alt="image">
-            <img class="w-[100px]" src="{{ asset('images/ICT.png') }}" alt="image">
-            <img class="w-[75px]" src="{{ asset('images/UNDP.png') }}" alt="image">
+            <img class="w-[100px]" src="{{ asset('images/ict.png') }}" alt="image">
+            <img class="w-[75px]" src="{{ asset('images/undp.png') }}" alt="image">
         </div>
     </div>
 @endsection

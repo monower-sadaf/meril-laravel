@@ -18,4 +18,12 @@ class PortalController extends Controller
     {
         return view('portal.marketing');
     }
+    public function about_us()
+    {
+        return view('portal.about_us');
+    }
+    public function contact_us()
+    {
+        return view('portal\contact-us');
+    }
 }

@@ -36,7 +36,7 @@
 <header class="header position-relative z-9">
     <nav class="navbar navbar-expand-lg navbar-dark navbar-theme-primary fixed-top headroom">
         <div class="container position-relative">
-            <a class="navbar-brand mr-lg-3" href="index.html">
+            <a class="navbar-brand mr-lg-3" href="{{route('/')}}">
                 <img class="navbar-brand-dark" src="assets/img/merilsoft_logo_1.png" alt="menuimage" width="50" height="50">
                 <!--<img class="navbar-brand-light" src="assets/img/logo-color.png" alt="menuimage">-->
                 
@@ -60,15 +60,15 @@
                 <ul class="navbar-nav navbar-nav-hover">
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="software.html">Software Development</a>
+                        <a class="nav-link" href="{{route('software')}}">Software Development</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="marketing.html">Marketing Services</a>
+                        <a class="nav-link" href="{{route('marketing')}}">Marketing Services</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="consultancy.html">IT Consultancy</a>
+                        <a class="nav-link" href="#">IT Consultancy</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
@@ -76,10 +76,10 @@
                             <i class="fas fa-angle-down nav-link-arrow ml-1"></i>
                         </a>
                          <ul class="sub-menu dropdown-menu">
-                            <li><a class="dropdown-item" href="about_us.html">About Us</a></li>
-                            <li><a class="dropdown-item" href="news.html">News</a></li>
-                            <li><a class="dropdown-item" href="career_page.html">Careers</a></li>
-                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                            <li><a class="dropdown-item" href="{{route('about_us')}}">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">News</a></li>
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                            <li><a class="dropdown-item" href="{{route('contact_us')}}">Contact</a></li>
     
                          </ul>
                     </li>
@@ -962,21 +962,21 @@
     </button>
     <!--scroll bottom to top button end-->
     <!--build:js-->
-    <script src="assets/js/vendors/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/vendors/popper.min.js"></script>
-    <script src="assets/js/vendors/bootstrap.min.js"></script>
-    <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/vendors/jquery.easing.min.js"></script>
-    <script src="assets/js/vendors/mixitup.min.js"></script>
-    <script src="assets/js/vendors/headroom.min.js"></script>
-    <script src="assets/js/vendors/smooth-scroll.min.js"></script>
-    <script src="assets/js/vendors/wow.min.js"></script>
-    <script src="assets/js/vendors/owl.carousel.min.js"></script>
-    <script src="assets/js/vendors/jquery.waypoints.min.js"></script>
-    <!--<script src="assets/js/vendors/countUp.min.js"></script>-->
-    <script src="assets/js/vendors/jquery.countdown.min.js"></script>
-    <script src="assets/js/vendors/validator.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="{{ asset('assets/js/vendors/jquery-3.5.1.min.js')}}"></script>
+    <script src="{{ asset('assets/js/vendors/popper.min.js')}}"></script>
+    <script src="{{ asset('assets/js/vendors/bootstrap.min.js')}}"></script>
+    <script src="{{ asset('assets/js/vendors/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{ asset('assets/js/vendors/jquery.easing.min.js')}}"></script>
+    <script src="{{ asset('assets/js/vendors/mixitup.min.js')}}"></script>
+    <script src="{{ asset('assets/js/vendors/headroom.min.js')}}"></script>
+    <script src="{{ asset('assets/js/vendors/smooth-scroll.min.js')}}"></script>
+    <script src="{{ asset('assets/js/vendors/wow.min.js')}}"></script>
+    <script src="{{ asset('assets/js/vendors/owl.carousel.min.js')}}"></script>
+    <script src="{{ asset('assets/js/vendors/jquery.waypoints.min.js')}}"></script>
+    <!--<script src="{{ asset('assets/js/vendors/countUp.min.js')}}"></script>-->
+    <script src="{{ asset('assets/js/vendors/jquery.countdown.min.js')}}"></script>
+    <script src="{{ asset('assets/js/vendors/validator.min.js')}}"></script>
+    <script src="{{ asset('assets/js/app.js')}}"></script>
     <!--endbuild-->
 </body>
 

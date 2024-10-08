@@ -33,22 +33,22 @@
                     </summary>
                     <ul class="menu dropdown-content rounded-box z-[1] w-52 p-2 shadow text-white bg-primary pt-10">
                         <li>
-                            <a>Website Development</a>
+                            <a href="{{ route('software') }}">Website Development</a>
                         </li>
                         <li>
-                            <a>Cloud and Hosting </a>
+                            <a href="{{ route('software') }}">Cloud and Hosting </a>
                         </li>
                         <li>
-                            <a>Digital Marketing</a>
+                            <a href="{{ route('software') }}">Digital Marketing</a>
                         </li>
                         <li>
-                            <a>Software Development</a>
+                            <a href="{{ route('software') }}">Software Development</a>
                         </li>
                         <li>
-                            <a>Apps Development</a>
+                            <a href="{{ route('software') }}">Apps Development</a>
                         </li>
                         <li>
-                            <a>Outsourcing</a>
+                            <a href="{{ route('software') }}">Outsourcing</a>
                         </li>
                     </ul>
                 </details>
@@ -63,19 +63,19 @@
                     </summary>
                     <ul class="menu dropdown-content rounded-box z-[1] w-52 p-2 shadow text-white bg-primary pt-10">
                         <li>
-                            <a>e-Governance</a>
+                            <a href="{{ route('marketing') }}">e-Governance</a>
                         </li>
                         <li>
-                            <a>ERP</a>
+                            <a href="{{ route('marketing') }}">ERP</a>
                         </li>
                         <li>
-                            <a>Managed IT</a>
+                            <a href="{{ route('marketing') }}">Managed IT</a>
                         </li>
                         <li>
-                            <a>Innovation</a>
+                            <a href="{{ route('marketing') }}">Innovation</a>
                         </li>
                         <li>
-                            <a>Data Science</a>
+                            <a href="{{ route('marketing') }}">Data Science</a>
                         </li>
                     </ul>
                 </details>
@@ -90,13 +90,13 @@
                     </summary>
                     <ul class="menu dropdown-content rounded-box z-[1] w-52 p-2 shadow text-white bg-primary pt-10 right-2">
                         <li>
-                            <a>About us</a>
+                            <a href="{{ route('about_us') }}">About us</a>
                         </li>
                         <li>
-                            <a>Partner</a>
+                            <a href="#">Partner</a>
                         </li>
                         <li>
-                            <a>Contact</a>
+                            <a href="{{ route('contact_us') }}">Contact</a>
                         </li>
                     </ul>
                 </details>
@@ -123,8 +123,24 @@
                     <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
                 </summary>
                 <ul class="menu dropdown-content bg-white rounded-box z-[1] w-52 p-2 shadow text-black">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 2</a></li>
+                    <li>
+                        <a href="{{ route('software') }}">Website Development</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('software') }}">Cloud and Hosting </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('software') }}">Digital Marketing</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('software') }}">Software Development</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('software') }}">Apps Development</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('software') }}">Outsourcing</a>
+                    </li>
                 </ul>
             </details>
         </li>
@@ -137,8 +153,21 @@
                     <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
                 </summary>
                 <ul class="menu dropdown-content bg-white rounded-box z-[1] w-52 p-2 shadow text-black">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 2</a></li>
+                    <li>
+                        <a href="{{ route('marketing') }}">e-Governance</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('marketing') }}">ERP</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('marketing') }}">Managed IT</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('marketing') }}">Innovation</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('marketing') }}">Data Science</a>
+                    </li>
                 </ul>
             </details>
         </li>
@@ -151,8 +180,15 @@
                     <svg class="w-4 h-4 fill-white group-hover:rotate-180 transition-all duration-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
                 </summary>
                 <ul class="menu dropdown-content bg-white rounded-box z-[1] w-52 p-2 shadow text-black">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 2</a></li>
+                    <li>
+                        <a href="{{ route('about_us') }}">About us</a>
+                    </li>
+                    <li>
+                        <a href="#">Partner</a>
+                    </li>
+                    <li>
+                        <a href="{{ route('contact_us') }}">Contact</a>
+                    </li>
                 </ul>
             </details>
         </li>

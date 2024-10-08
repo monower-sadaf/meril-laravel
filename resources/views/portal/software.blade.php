@@ -36,17 +36,18 @@
 <header class="header position-relative z-9">
     <nav class="navbar navbar-expand-lg navbar-dark navbar-theme-primary fixed-top headroom">
         <div class="container position-relative">
-            <a class="navbar-brand mr-lg-3" href="{{ url('/') }}">
-                <img class="navbar-brand-dark" src="{{ asset('assets/img/merilsoft_logo_1.png') }}" alt="menuimage" width="50" height="50">
+            <a class="navbar-brand mr-lg-3" href="{{route('/')}}">
+                <img class="navbar-brand-dark" src="assets/img/merilsoft_logo_1.png" alt="menuimage" width="50" height="50">
+                <!--<img class="navbar-brand-light" src="assets/img/logo-color.png" alt="menuimage">-->
                 
-                
+                <!--<img src="assets/img/logo-white.png" class="mr-3" alt="Footer logo">-->
             </a>
             <div class="navbar-collapse collapse" id="navbar-default-primary">
                 <div class="navbar-collapse-header">
                     <div class="row">
                         <div class="col-6 collapse-brand">
                             <a href="index.html">
-                                <img src="{{ asset('assets/img/logo-color.png') }}" alt="menuimage">
+                                <img src="assets/img/logo-color.png" alt="menuimage">
                             </a>
                         </div>
                         <div class="col-6 collapse-close">
@@ -59,15 +60,15 @@
                 <ul class="navbar-nav navbar-nav-hover">
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="software.html">Software Development</a>
+                        <a class="nav-link" href="{{route('software')}}">Software Development</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="marketing.html">Marketing Services</a>
+                        <a class="nav-link" href="{{route('marketing')}}">Marketing Services</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="consultancy.html">IT Consultancy</a>
+                        <a class="nav-link" href="#">IT Consultancy</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
@@ -75,10 +76,10 @@
                             <i class="fas fa-angle-down nav-link-arrow ml-1"></i>
                         </a>
                          <ul class="sub-menu dropdown-menu">
-                            <li><a class="dropdown-item" href="about_us.html">About Us</a></li>
-                            <li><a class="dropdown-item" href="news.html">News</a></li>
-                            <li><a class="dropdown-item" href="career_page.html">Careers</a></li>
-                            <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                            <li><a class="dropdown-item" href="{{route('about_us')}}">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">News</a></li>
+                            <li><a class="dropdown-item" href="#">Careers</a></li>
+                            <li><a class="dropdown-item" href="{{route('contact_us')}}">Contact</a></li>
     
                          </ul>
                     </li>
