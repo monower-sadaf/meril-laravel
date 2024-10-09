@@ -23,11 +23,12 @@
                          </div>
 
                          <div class="flex items-center gap-5 " style="place-content: center;">
-                            <a href="#" class="flex items-center gap-2">
+                            <a href="https://www.facebook.com/merilsoftllc" class="flex items-center gap-2">
                                 <img class="w-[37px]" src="{{ asset('images/fb.png') }}" alt="image">
                             </a>
                          </div>
                     </div>
+                    
                     <div>
                         <h3 class="font-semibold text-[15px] lg:text-[22px] text-white pb-[10px]">Service</h3>
                         <ul class="flex flex-col gap-4 text-white text-[14px] lg:text-[16px]">

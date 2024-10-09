@@ -24,6 +24,7 @@
                 Our business philosophy is to assist our client to develop in their own business. 
                 Our long-experienced and highly skilled experts are committed to our valued by dedicated services. 
             </h3>
+            <p style="font-style: italic;color: #354e8e;"><span>*</span>Merilsoft is powered by its partner’s resources, expertise, and experience at the backend</p>
             
         </section>
 

@@ -6,7 +6,8 @@
 @section('content')
 <style>
     .card-b {
-        box-shadow: 0px 0px 8px 1px #6a6a6a;
+        height: 150px;
+        width: 150px;
     }
 </style>
 
@@ -48,7 +49,8 @@
                         <ul class="list-disc" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
                             <li>Sheba ERP</li>
                             <li>Oddo ERP</li>
-                            <li>Custom ERP</li>                            
+                            <li>Custom ERP</li>
+                            <li>.</li>
                         </ul>
                     </div>
                 </div>

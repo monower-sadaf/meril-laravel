@@ -1,3 +1,7 @@
+@if (request()->is('/'))
+<img src="{{ asset('images/hero_image3.png') }}" alt="preload" style="display:none;" />
+@endif
+
 <div class="bg-white py-1">
     <div class="container mx-auto px-2 lg:px-12 flex  justify-end">
         <div class="flex items-center gap-8 md:flex-col lg:flex-row lg:gap-16">
@@ -7,11 +11,8 @@
                     +1-718-809-2244
                 </span>
             </a>
-            <a href="mailto:contact@merilsoft.com" class="flex items-center gap-2 text-[15px]">
-                <svg class="w-4 h-4 fill-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
-                <span>
-                    contact@merilsoft.com
-                </span>
+            <a style="background: #1e2c76;color: white;padding: 10px 8px;" href="mailto:contact@merilsoft.com" class="btn border-none min-h-0 h-auto font-bold text-[16px] flex items-center gap-2 text-[15px]">
+               Contact Us
             </a>
         </div>
     </div>
@@ -242,7 +243,7 @@
 
 
 <div class="fixed bottom-36 right-5 z-50">
-    <a terget="_blank" href="https://wa.me/+8801678001080?text=I'm%20interested%20in%20your%20services">
+    <a target="_blank" href="https://www.facebook.com/messages/t/merilsoftllc">
         <img class="w-[70px]" src="{{ asset('images/support.png') }}" alt="MerilSoft">
     </a>
 </div>

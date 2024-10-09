@@ -20,20 +20,98 @@
         <section class="pb-[50px] pt-[50px]" style="text-align: -webkit-center;">
             <h3 class="text-center text-[35px] font-semibold text-black pb-[30px]">Why us</h3>
             <div class="text-left" style="width: 60%; ">
-                <ul style="list-style: outside;">
-                    <li>
-                        Cost effectiveness: As we care about the development of our client’s business, we provide the cost-effective solution with flexible payment terms to them.
+                <h6 style="font-size: 24px;font-weight: bold;">The unique strengths and value propositions we offer</h6>
+                <br>
+                <ul class="list-disc pl-6 md:pl-12 text-[16px] lg:text-[20px] leading-[25px] text-black" style="list-style: auto;">
+                    <li class="py-1">
+                        <span class="font-semibold">Expertise and Experience:</span>
+                        Highlight the team’s technical skills, industry experience, and successful projects.
+                        Mention any certifications, awards, or recognitions.
                     </li>
-                    <li>
-                        Relationship: We evaluate a long-term business relationship with the client in the course of business development of the client.
+                    <li class="py-1">
+                        <span class="font-semibold">Innovative Solutions:</span>
+                        Emphasize your company’s ability to provide cutting-edge and innovative software solutions.
+                        Showcase any proprietary technologies or unique methodologies.
                     </li>
-                    <li>
-                        Expertise: We are having the groups of experienced technical expertise with proven records. 
+                    <li class="py-1">
+                        <span class="font-semibold">Customer-Centric Approach:</span>
+                        Describe how your company prioritizes customer needs and delivers personalized solutions.
+                        Include testimonials or case studies demonstrating customer satisfaction.
                     </li>
-                    <li>
-                        Service & support: Dedicated service support to ensure the maximum uptime of the client’s system
+                    <li class="py-1">
+                        <span class="font-semibold">Quality and Reliability:</span>
+                        Stress your commitment to high-quality standards and reliable software delivery.
+                        Mention any quality assurance processes or standards you adhere to.
                     </li>
+                    <li class="py-1">
+                        <span class="font-semibold">Scalability and Flexibility:</span>
+                        Highlight your ability to scale solutions according to client needs.
+                        Discuss how your software can adapt to different industries or business sizes.
+                    </li>
+                    <li class="py-1">
+                        <span class="font-semibold">Support and Maintenance:</span>
+                        Outline the support and maintenance services you offer post-deployment.
+                        Mention any service level agreements (SLAs) or dedicated support teams.
+                    </li>
+                    <li class="py-1">
+                        <span class="font-semibold">Security and Compliance:</span>
+                        Emphasize your focus on security and compliance with industry standards.
+                        Mention any specific certifications or compliance frameworks you follow.
+                    </li>
+                    <li class="py-1">
+                        <span class="font-semibold">Global Reach and Local Presence:</span>
+                        If applicable, highlight your global presence and ability to serve clients worldwide.
+                        Mention any local offices or partnerships that enhance your service delivery.
+                    </li>
+                    <li class="py-1">
+                        <span class="font-semibold">Cost-Effectiveness:</span>
+                        Discuss how your solutions provide value for money.
+                        Highlight any cost-saving benefits or competitive pricing models.
+                    </li>
+                    <li class="py-1">
+                        <span class="font-semibold">Vision and Values:</span>
+                        Share your company’s vision and core values.
+                        Explain how these drive your approach to software development and client relationships.
+                    </li>
+
                 </ul>
+            </div>
+        </section>
+        <section>
+            <div class="bg-white shad py-3 mb-[25px] lg:py-6 lg:mb-[50px] mb-[25px]" style="margin-bottom:30px">
+                <div class="container mx-auto px-2 lg:px-12 grid grid-cols-2 lg:grid-cols-7 justify-items-center gap-4 lg:gap-0  flex justify-center flex-col md:flex-col lg:flex-row" style="display: flex; gap: 50px;">
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[5.143125em] lg:h-[5.143125em]" src="./assets2/images/stats1.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left">45+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Products</h3>
+                        </div>
+                    </div>
+                    <div class="bg-primary w-px h-[4.5em] hidden lg:block"></div>
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[5.143125em] lg:h-[5.143125em]" src="./assets2/images/stats2.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left">1500+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Happy Customers</h3>
+                        </div>
+                    </div>
+                    <div class="bg-primary w-px h-[4.5em] hidden lg:block"></div>
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[4em] lg:h-[4em]" src="./assets2/images/stats3.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left">7000+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Downloaded</h3>
+                        </div>
+                    </div>
+                    <div class="bg-primary w-px h-[4.5em] hidden lg:block"></div>
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[4em] lg:h-[4em]" src="./assets2/images/stats4.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left">60+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Team Members</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 

@@ -1,13 +1,14 @@
 @extends('layout.portal_layout')
 
 @section('content')
+
 <style>
-   .card_box {
+   /* .card_box {
     box-shadow: -4px -3px 6px 1px #acacac;
     height: 208px;
-}
+} */
 </style>
-    <div class="bg-cover bg-center mb-[59px]" style="background-image: url({{ asset('images/hero_image3.png') }});">
+    <div class="bg-cover bg-center mb-[59px]" style="background-image: url({{ asset('images/hero_image3.png') }});" preload>
         <div class="container mx-auto px-2 lg:px-12 py-16 flex flex-col lg:flex-row lg:justify-between lg:items-end">
             <div class="lg:w-[45%]">
                 <div class="pb-6 lg:pb-11">
