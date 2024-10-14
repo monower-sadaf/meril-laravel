@@ -22,3 +22,5 @@ Route::get('/contact_us', [PortalController::class, 'contact_us'])->name('contac
 Route::get('/why_us', [PortalController::class, 'why_us'])->name('why_us');
 Route::get('/partner', [PortalController::class, 'partner'])->name('partner');
 Route::get('/terms_and_conditions', [PortalController::class, 'terms_and_conditions'])->name('terms_and_conditions');
+Route::post('/sendManualEmail', [PortalController::class, 'sendManualEmail'])->name('sendManualEmail');
+

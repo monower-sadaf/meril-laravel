@@ -32,10 +32,48 @@
             
         </section>
 
+        <section>
+            <div class="bg-white shad py-3 mb-[25px] lg:py-6 lg:mb-[50px] mb-[25px]" style="margin-bottom:30px">
+                <div class="container mx-auto px-2 lg:px-12 grid grid-cols-2 lg:grid-cols-7 justify-items-center gap-4 lg:gap-0  flex justify-center flex-col md:flex-col lg:flex-row" style="display: flex; gap: 50px;">
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[5.143125em] lg:h-[5.143125em]" src="./assets2/images/stats1.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left" style="color: #1a2c79;font-size: 42px;">2500+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Projects</h3>
+                        </div>
+                    </div>
+                    <div class="bg-primary w-px h-[4.5em] hidden lg:block"></div>
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[5.143125em] lg:h-[5.143125em]" src="./assets2/images/stats2.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left" style="color: #1a2c79;font-size: 42px;">1500+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Happy Customers</h3>
+                        </div>
+                    </div>
+                    <!-- <div class="bg-primary w-px h-[4.5em] hidden lg:block"></div>
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[4em] lg:h-[4em]" src="./assets2/images/stats3.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left">7000+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Downloaded</h3>
+                        </div>
+                    </div> -->
+                    <div class="bg-primary w-px h-[4.5em] hidden lg:block"></div>
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[4em] lg:h-[4em]" src="./assets2/images/stats4.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left" style="color: #1a2c79;font-size: 42px;">100+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Team Members</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="container mx-auto px-2 lg:px-12">
+
+        <!-- <div class="container mx-auto px-2 lg:px-12">
             <h3 class="font-semibold text-[16px] lg:text-[30px] leading-[37px] text-primary text-center pb-[25px] lg:pb-[47px]">Trusted by over 500+ customers<span style="font-size: 25px;">*</span>...</h3>
-        </div>
+        </div> -->
     
         <div class="bg-[#F3F5FF]">
             <div  class="container mx-auto px-2 lg:px-12 grid grid-cols-2 lg:grid-cols-5 justify-items-center gap-4 lg:gap-0 py-5">

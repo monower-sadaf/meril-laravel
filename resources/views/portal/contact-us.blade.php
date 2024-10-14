@@ -74,28 +74,35 @@ input[type="checkbox"]:checked::before {
         </section>
         <section class="pb-12 md:pb-20 pt-12 md:pt-20 mx-auto" style="margin-bottom: 32px;">
             <h3 class="text-center text-3xl font-semibold text-black pb-10 md:pb-16" style="margin-top: 26px;">Contact us</h3>
-            <form class="space-y-4 md:space-y-6  rounded-md" style="max-width: 35%;margin: 20px auto;padding: 37px;box-shadow: 0px 0px 5px 1px #939393;" id="contact-form">
+           
+            <form action="{{ route('sendManualEmail') }}" method="POST" class="space-y-4 md:space-y-6  rounded-md" style="max-width: 35%;margin: 20px auto;padding: 37px;box-shadow: 0px 0px 5px 1px #939393;" id="contact-form">
+                @csrf
+                @if (session()->has('success'))
+                    <div class="bg-green-500 p-2 text-white" style="background: aquamarine;text-align: center;color: black">
+                        {{ session()->get('success') }}
+                    </div>
+                @endif
                 <div class="flex flex-col md:flex-row">
                     <div class="w-full md:w-1/2 md:pr-4">
                         <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                        <input type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary" />
+                        <input required type="text" id="name" name="name" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary" />
                     </div>
                     <div class="w-full mt-4 md:mt-0 md:pl-4 md:w-1/2">
                         <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                        <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary" />
+                        <input required type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary" />
                     </div>
                     <div class="w-full mt-4 md:mt-0 md:pl-4 md:w-1/2">
                         <label for="email" class="block text-sm font-medium text-gray-700">Mobile number </label>
-                        <input type="email" id="email" name="email" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary" />
+                        <input type="number" id="number" name="number" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary" />
                     </div>
                 </div>
                 <div>
                     <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"></textarea>
+                    <textarea required id="message" name="message" rows="4" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary focus:border-primary"></textarea>
                 </div>
                 <div class="flex flex-col" style="margin: 11px 0px;">
                     <div class="r_box-container">
-                        <input type="checkbox">
+                        <input type="checkbox" required class="r_check">
                         <p class="r_robot">I'm not a robot</p>
                           <div>
                             <div class="r_container" style="line-height: 12px;">
@@ -124,10 +131,48 @@ input[type="checkbox"]:checked::before {
            
         </section>
 
+        <section>
+            <div class="bg-white shad py-3 mb-[25px] lg:py-6 lg:mb-[50px] mb-[25px]" style="margin-bottom:30px">
+                <div class="container mx-auto px-2 lg:px-12 grid grid-cols-2 lg:grid-cols-7 justify-items-center gap-4 lg:gap-0  flex justify-center flex-col md:flex-col lg:flex-row" style="display: flex; gap: 50px;">
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[5.143125em] lg:h-[5.143125em]" src="./assets2/images/stats1.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left" style="color: #1a2c79;font-size: 42px;">2500+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Projects</h3>
+                        </div>
+                    </div>
+                    <div class="bg-primary w-px h-[4.5em] hidden lg:block"></div>
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[5.143125em] lg:h-[5.143125em]" src="./assets2/images/stats2.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left" style="color: #1a2c79;font-size: 42px;">1500+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Happy Customers</h3>
+                        </div>
+                    </div>
+                    <!-- <div class="bg-primary w-px h-[4.5em] hidden lg:block"></div>
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[4em] lg:h-[4em]" src="./assets2/images/stats3.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left">7000+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Downloaded</h3>
+                        </div>
+                    </div> -->
+                    <div class="bg-primary w-px h-[4.5em] hidden lg:block"></div>
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[4em] lg:h-[4em]" src="./assets2/images/stats4.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left" style="color: #1a2c79;font-size: 42px;">100+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Team Members</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="container mx-auto px-2 lg:px-12">
+
+        <!-- <div class="container mx-auto px-2 lg:px-12">
             <h3 class="font-semibold text-[16px] lg:text-[30px] leading-[37px] text-primary text-center pb-[25px] lg:pb-[47px]">Trusted by over 500+ customers<span style="font-size: 25px;">*</span>...</h3>
-        </div>
+        </div> -->
     
         <div class="bg-[#F3F5FF]">
             <div  class="container mx-auto px-2 lg:px-12 grid grid-cols-2 lg:grid-cols-5 justify-items-center gap-4 lg:gap-0 py-5">

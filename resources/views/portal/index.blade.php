@@ -19,9 +19,9 @@
                 </div>
                 <a href="{{ route('contact_us') }}" class=" text-[16px] lg:text-[22px] bg-primary text-white font-bold px-2 py-1 lg:px-4 lg:py-2 rounded">Contact Us</a>
             </div>
-            <a href="https://mysoftheaven.com/" target="_blank">
+            <!-- <a href="https://mysoftheaven.com/" target="_blank">
                 <img class="w-[150px] lg:w-[200px] mx-auto" src="{{ asset('images/mysoft_logo.png') }}" alt="my soft logo" />
-            </a>
+            </a> -->
             
         </div>
     </div>
@@ -89,7 +89,7 @@
 
 
     <section class="pb-[85px]">
-        <h3 class="text-center text-[35px] font-semibold text-black pb-[47px]">Service</h3>
+        <h3 class="text-center text-[35px] font-semibold text-black pb-[47px]">Services</h3>
         <div class="container mx-auto px-2 lg:px-12 grid grid-cols-1 lg:grid-cols-4 gap-8">
             <a href="{{ route('service') }}">
                 <div  class="bg-[#F2F7FF] card_box p-5 rounded-md flex flex-col justify-center items-center gap-5">
@@ -120,7 +120,7 @@
 
 
     <section class="pb-[85px]">
-        <h3 class="text-center text-[35px] font-semibold text-black pb-[47px]">Solution</h3>
+        <h3 class="text-center text-[35px] font-semibold text-black pb-[47px]">Solutions</h3>
         <div class="container mx-auto px-2 lg:px-12 grid grid-cols-1 lg:grid-cols-4 gap-8">
             <div class="bg-[#F2F7FF] card_box p-5 rounded-md flex flex-col justify-center items-center gap-5">
                 <img src="{{ asset('images/egov.png') }}" class="w-[80px]" alt="MerilSoft">
@@ -205,67 +205,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="item bg-white rounded-lg shadow-lg p-2 lg:p-4">
-                    <div class="pb-3">
-                        <svg class="w-10 h-10 fill-gray-100 bg-primary p-2 rounded-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
-                    </div>
-                    <p class="text-[#2C2B2B] text-[14px] lg:text-[18px] leading-[30px] pb-3 lg:pb-5">Assertively procrastinate distributed relationships whereas equity invested intellectual capital everything energistically underwhelm proactive.</p>
-
-                    <div class="flex flex-col lg:flex-row items-center justify-between gap-3 lg:gap-0">
-                        <div class="flex items-center gap-3 lg:w-[40%]">
-                            <div>
-                                <img class="w-16 h-16" src="{{ asset('images/user1.png') }}"alt="image">
-                            </div>
-                            <div>
-                                <p class="text-[18px] font-semibold text-primary">Kyan Boards</p>
-                                <p class="text-[14px] leading-[18px]">CEO, ThemeTags</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex flex-col items-end">
-                                <div class="flex gap-2 pb-3 lg:pb-0">
-                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
-                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
-                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
-                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
-                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
-                                </div>
-                                <p>5.0 Out of 5</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item bg-white rounded-lg shadow-lg p-2 lg:p-4">
-                    <div class="pb-3">
-                        <svg class="w-10 h-10 fill-gray-100 bg-primary p-2 rounded-md" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 216C0 149.7 53.7 96 120 96l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72zm256 0c0-66.3 53.7-120 120-120l8 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-8 0c-30.9 0-56 25.1-56 56l0 8 64 0c35.3 0 64 28.7 64 64l0 64c0 35.3-28.7 64-64 64l-64 0c-35.3 0-64-28.7-64-64l0-32 0-32 0-72z"/></svg>
-                    </div>
-                    <p class="text-[#2C2B2B] text-[14px] lg:text-[18px] leading-[30px] pb-3 lg:pb-5"> Intrinsicly facilitate functional imperatives without next-generation services. Compellingly revolutionize worldwide users enterprise best practices.</p>
-
-                    <div class="flex flex-col lg:flex-row items-center justify-between gap-3 lg:gap-0">
-                        <div class="flex items-center gap-3 lg:w-[40%]">
-                            <div>
-                                <img class="w-16 h-16" src="{{ asset('images/user1.png') }}" alt="image">
-                            </div>
-                            <div>
-                                <p class="text-[18px] font-semibold text-primary">Pirtle Karol</p>
-                                <p class="text-[14px] leading-[18px]">Team Leader, ThemeTags</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex flex-col items-end">
-                                <div class="flex gap-2 pb-3 lg:pb-0">
-                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
-                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
-                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
-                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
-                                    <img class="w-4 h-4" src="./assets2/images/star.png" alt="">
-                                </div>
-                                <p>5.0 Out of 5</p>
-                            </div>
-                        </div>
-                    </div>
                 </div> -->
+             
                
             </div>
         </div>
@@ -329,12 +270,50 @@
         </div>
     </section> -->
 
+    <section>
+            <div class="bg-white shad py-3 mb-[25px] lg:py-6 lg:mb-[50px] mb-[25px]" style="margin-bottom:30px">
+                <div class="container mx-auto px-2 lg:px-12 grid grid-cols-2 lg:grid-cols-7 justify-items-center gap-4 lg:gap-0  flex justify-center flex-col md:flex-col lg:flex-row" style="display: flex; gap: 50px;">
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[5.143125em] lg:h-[5.143125em]" src="./assets2/images/stats1.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left" style="color: #1a2c79;font-size: 42px;">2500+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Projects</h3>
+                        </div>
+                    </div>
+                    <div class="bg-primary w-px h-[4.5em] hidden lg:block"></div>
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[5.143125em] lg:h-[5.143125em]" src="./assets2/images/stats2.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left" style="color: #1a2c79;font-size: 42px;">1500+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Happy Customers</h3>
+                        </div>
+                    </div>
+                    <!-- <div class="bg-primary w-px h-[4.5em] hidden lg:block"></div>
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[4em] lg:h-[4em]" src="./assets2/images/stats3.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left">7000+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Downloaded</h3>
+                        </div>
+                    </div> -->
+                    <div class="bg-primary w-px h-[4.5em] hidden lg:block"></div>
+                    <div class="flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+                        <img class="w-[3em] h-[3em] lg:w-[4em] lg:h-[4em]" src="./assets2/images/stats4.png" alt="image">
+                        <div>
+                            <h3 class="text-[16px] lg:text-3xl font-bold text-center lg:text-left" style="color: #1a2c79;font-size: 42px;">100+</h3>
+                            <h3 class="text-[12px] lg:text-[22px] font-semibold text-center lg:text-left">Team Members</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     
 
 
-    <div class="container mx-auto px-2 lg:px-12">
+    <!-- <div class="container mx-auto px-2 lg:px-12">
         <h3 class="font-semibold text-[16px] lg:text-[30px] leading-[37px] text-primary text-center pb-[25px] lg:pb-[47px]">Trusted by over 500+ customers<span style="font-size: 25px;">*</span>...</h3>
-    </div>
+    </div> -->
 
     <div class="bg-[#F3F5FF]">
         <div  class="container mx-auto px-2 lg:px-12 grid grid-cols-2 lg:grid-cols-5 justify-items-center gap-4 lg:gap-0 py-5">
