@@ -41,53 +41,75 @@ class PortalController extends Controller
     {
         return view('portal.terms_and_conditions');
     }
+    public function privacy_policy()
+    {
+        return view('portal.privacy_policy');
+    }
 
+    public function sendEmail($from, $to, $subject, $message)
+    {
+        $encodedPassword = urlencode('*Contacting99#');
+        $dsn = "smtp://contact@merilsoft.com:$encodedPassword@webmail.merilsoft.com:587?verify_peer=0";
+    
+        try {
+            // Set up the Transport with SMTP settings
+            $transport = Transport::fromDsn($dsn);
+    
+            // Create the Mailer
+            $mailer = new Mailer($transport);
+    
+            // Create the Email message
+            $email = (new Email())
+                ->from($from)
+                ->to($to)
+                ->subject($subject)
+                ->text($message)
+                ->html("<p>$message</p>");
+    
+            // Send the Email
+            $mailer->send($email);
+    
+        } catch (\Exception $e) {
+            dd($e->getMessage());
+            // Log error or use session for debugging
+            session()->flash('error', 'Failed to send email: ' . $e->getMessage());
+            return false;
+        }
+    
+        return true;
+    }
+    
     public function sendManualEmail(Request $request)
-{
-    $name = $request->name;
-    $email_p = $request->email;
-    $number = $request->number;
-    $message = $request->message;
-
-    // URL-encoded password
-    $encodedPassword = urlencode('ingdlvjfngwmdkkt');
-    $dsn = "smtp://ahaduzzamanapon@gmail.com:$encodedPassword@smtp.gmail.com:587";
-
-    // Set up the Transport with SMTP settings
-    $transport = Transport::fromDsn($dsn);
-
-    // Create the Mailer
-    $mailer = new Mailer($transport);
-
-    // Create the first Email message
-    $email = (new Email())
-        ->from('contact@merilsoft.com')
-        ->to($email_p)
-        ->subject('Contact Request Sent')
-        ->text('Thank you for contacting us. We will get back to you soon.')
-        ->html('<p>Thank you for contacting us. We will get back to you soon.</p>');
-
-    // Send the first email and then the internal notification
-    try {
-        $mailer->send($email); // Send email to the customer
-
-        // Now, send the internal notification email to the company
-        $email2 = (new Email())
-            ->from($email_p)
-            ->to('contact@merilsoft.com')
-            ->subject('New Contact Request')
-            ->text("Name: $name\nEmail: $email_p\nNumber: $number\nMessage: $message")
-            ->html("<p>Name: $name</p><p>Email: $email_p</p><p>Number: $number</p><p>Message: $message</p>");
-
-        $mailer->send($email2); // Send internal notification
-
-        // Flash success message
-        session()->flash('success', 'The message should be Thank you for contacting us!');
-        return redirect()->back();
-    } catch (\Exception $e) {
-        session()->flash('error', 'Failed to send email: ' . $e->getMessage());
+    {
+        $name = $request->name;
+        $email_p = $request->email;
+        $number = $request->number;
+        $message = $request->message;
+    
+        // Send emails
+        $isSentToAdmin = $this->sendEmail(
+            $email_p,
+            'contact@merilsoft.com',
+            'New Contact Request',
+            "Name: $name\nEmail: $email_p\nNumber: $number\nMessage: $message"
+        );
+    
+        $isSentToUser = $this->sendEmail(
+            'contact@merilsoft.com',
+            $email_p,
+            'Thank you for contacting us',
+            "Thank you for contacting us. We will get back to you soon."
+        );
+    
+        // Check if both emails were sent successfully
+        if ($isSentToAdmin && $isSentToUser) {
+            session()->flash('success', 'Thank you for contacting us!');
+        } else {
+            session()->flash('error', 'Failed to send one or more emails.');
+        }
+    
         return redirect()->back();
     }
-}
+    
 
 }

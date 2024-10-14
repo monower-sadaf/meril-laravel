@@ -123,9 +123,8 @@
                     <div class="bg-white w-px h-5 hidden lg:block"></div>
                     <p class="text-[14px] lg:text-[16px]"><a href="{{ route('terms_and_conditions') }}">Terms & Conditions </a></p>
                     <div class="bg-white w-px h-5 hidden lg:block"></div>
-                    <p class="text-[14px] lg:text-[16px]">Privacy Policy</p>
+                    <p class="text-[14px] lg:text-[16px]"><a href="{{ route('privacy_policy') }}">Privacy Policy</a></p>
                     <div class="bg-white w-px h-5 hidden lg:block"></div>
-                    <p class="text-[14px] lg:text-[16px]"><a href="diversity.html">Diversity</a></p>
                 </div>
             </div>
         </div>

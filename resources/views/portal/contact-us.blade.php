@@ -67,7 +67,7 @@ input[type="checkbox"]:checked::before {
             <div class="h-full bg-gradient-to-r from-[rgba(15,39,122,0.80)] to-[rgba(201,26,96,0.80)]">
                 <div class="container mx-auto h-full flex items-center justify-center">
                     <div class="text-center">
-                        <h1 class="text-4xl font-bold text-white">Contact us - Empower Your Business</h1>
+                        <h1 class="text-4xl font-bold text-white">Contact us - Always At Your Service</h1>
                     </div>
                 </div>
             </div>
