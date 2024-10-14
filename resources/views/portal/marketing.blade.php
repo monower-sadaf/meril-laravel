@@ -14,7 +14,7 @@
     <!--build:css-->
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}"> --}}
     <div class="main">
-        <section class="bg-no-repeat bg-center bg-cover h-[300px] lg:h-[10.4375em] md:h-[3em]" style="background-image: url({{ asset('assets/img/header-bg-5.jpg')}})">
+        <section class="bg-no-repeat bg-center bg-cover h-[4em] lg:h-[10.4375em] md:h-[3em]" style="background-image: url({{ asset('assets/img/header-bg-5.jpg')}})">
             <div class="h-full bg-gradient-to-r from-[rgba(15,39,122,0.80)] to-[rgba(201,26,96,0.80)]">
                 <div class="container mx-auto h-full flex items-center justify-center">
                     <div class="text-center">
@@ -32,7 +32,7 @@
                     </div>
                     <div style="text-align: -webkit-center;">
                         <h3 class="text-[20px] font-semibold text-black">E-Governance</h3>
-                        <ul class="list-disc" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
+                        <ul class="" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
                             <li>Land Development Tax System</li>
                             <li>Case Management System</li>
                             <li>Unique Business ID System</li>
@@ -46,7 +46,7 @@
                     </div>
                     <div style="text-align: -webkit-center;">
                         <h3 class="text-[20px] font-semibold text-black">ERP</h3>
-                        <ul class="list-disc" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
+                        <ul class="" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
                             <li>Sheba ERP</li>
                             <li>Oddo ERP</li>
                             <li>Custom ERP</li>
@@ -60,7 +60,7 @@
                     </div>
                     <div>
                         <h3 class="text-[20px] font-semibold text-black">Managed IT</h3>
-                        <ul class="list-disc" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
+                        <ul class="" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
                             <li>Managed Cloud</li>
                             <li>Managed Security</li>
                             <li>Managed Network</li>
@@ -75,7 +75,7 @@
                     </div>
                     <div style="text-align: -webkit-center;">
                         <h3 class="text-[20px] font-semibold text-black">Innovation</h3>
-                        <ul class="list-disc" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
+                        <ul class="" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
                             <li>Digital Transformation</li>
                             <li>Robotic Proccess Automation</li>
                             <li>Sustainable Technology</li>
@@ -90,7 +90,7 @@
                     </div>
                     <div style="text-align: -webkit-center;">
                         <h3 class="text-[20px] font-semibold text-black">Artificial Intelligence</h3>
-                        <ul class="list-disc" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
+                        <ul class="" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
                             <li>Machine Learning</li>
                             <li>Natural Language Processing</li>
                             <li>Computer Vision</li>                           
@@ -103,7 +103,7 @@
                     </div>
                     <div style="text-align: -webkit-center;">
                         <h3 class="text-[20px] font-semibold text-black">Data Science</h3>
-                        <ul class="list-disc" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
+                        <ul class="" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
                             <li>Data Analytics</li>
                             <li>Big Data</li>
                             <li>Blockchain</li>

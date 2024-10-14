@@ -8,7 +8,7 @@
     <!--build:css-->
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}"> --}}
     <div class="main">
-        <section class="bg-no-repeat bg-center bg-cover h-[300px] lg:h-[10.4375em] md:h-[3em]" style="background-image: url({{ asset('assets/img/header-bg-5.jpg')}})">
+        <section class="bg-no-repeat bg-center bg-cover h-[4em] lg:h-[10.4375em] md:h-[3em]" style="background-image: url({{ asset('assets/img/header-bg-5.jpg')}})">
             <div class="h-full bg-gradient-to-r from-[rgba(15,39,122,0.80)] to-[rgba(201,26,96,0.80)]">
                 <div class="container mx-auto h-full flex items-center justify-center">
                     <div class="text-center">

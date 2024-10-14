@@ -13,7 +13,7 @@
     <!--build:css-->
     {{-- <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}"> --}}
     <div class="main">
-        <section class="bg-no-repeat bg-center bg-cover h-[30052px] lg:h-[10.4375em] md:h-[3em]" style="background-image: url({{ asset('assets/img/header-bg-5.jpg')}})">
+        <section class="bg-no-repeat bg-center bg-cover h-[4em] lg:h-[10.4375em] md:h-[3em]" style="background-image: url({{ asset('assets/img/header-bg-5.jpg')}})">
             <div class="h-full bg-gradient-to-r from-[rgba(15,39,122,0.80)] to-[rgba(201,26,96,0.80)]">
                 <div class="container mx-auto h-full flex items-center justify-center">
                     <div class="text-center">
@@ -31,7 +31,7 @@
                     </div>
                     <div>
                         <h3 class="text-[20px] font-semibold text-black">Website Development</h3>
-                        <ul class="list-disc" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
+                        <ul class="" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
                             <li>Design and develop</li>
                             <li>E-commerce</li>
                             <li>CMS</li>
@@ -45,7 +45,7 @@
                     </div>
                     <div>
                         <h3 class="text-[20px] font-semibold text-black">Cloud & Hosting</h3>
-                        <ul class="list-disc" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
+                        <ul class="" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
                             <li>Cloud Hosting</li>
                             <li>Domain Registration</li>
                             <li>Web Hosting</li>
@@ -59,7 +59,7 @@
                     </div>
                     <div>
                         <h3 class="text-[20px] font-semibold text-black">Digital Marketing</h3>
-                        <ul class="list-disc" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
+                        <ul class="" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
                             <li>Social Media Marketing</li>
                             <li>Content Marketing</li>
                             <li>SEO</li>
@@ -74,7 +74,7 @@
                     </div>
                     <div>
                         <h3 class="text-[20px] font-semibold text-black">Apps Development</h3>
-                        <ul class="list-disc" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
+                        <ul class="" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
                             <li>Android App Development</li>
                             <li>iOS App Development</li>
                             <li>React Native App Development</li>
@@ -89,7 +89,7 @@
                     </div>
                     <div>
                         <h3 class="text-[20px] font-semibold text-black">Software Development</h3>
-                        <ul class="list-disc" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
+                        <ul class="" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
                             <li>Web Application Development</li>
                             <li>Mobile Apps Development</li>
                             <li>Software Testing and Quality Assurance</li>
@@ -103,7 +103,7 @@
                     </div>
                     <div>
                         <h3 class="text-[20px] font-semibold text-black">Outsourcing</h3>
-                        <ul class="list-disc" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
+                        <ul class="" style="text-align: -webkit-center;font-size: 13px;color: #6a6a6a;">
                             <li>IT Consulting</li>
                             <li>Technology Project</li>
                             <li>IT Human Resources</li>
