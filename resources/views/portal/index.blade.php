@@ -308,6 +308,58 @@
             </div>
         </section>
 
+
+        
+    <style>
+        .swiper {
+            width: 100%;
+            padding: 20px 0;
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            max-width: 100px;
+        }
+    </style>
+
+<div style="margin:0;width: 100%;" class="bg-[#F3F5FF] swiper swiper-main-valuable px-2 lg:px-12 grid grid-cols-2 lg:grid-cols-5 justify-items-center gap-2 lg:gap-0 py-5" id="valuableClients" >
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="img-responsive" loading="lazy"  src="{{ asset('images/scout3.png') }}"      alt=""></div>
+        <div class="swiper-slide"><img class="img-responsive" loading="lazy"  src="{{ asset('images/bcct2.png') }}"       alt=""></div>
+        <div class="swiper-slide"><img class="img-responsive" loading="lazy"  src="{{ asset('images/govt3.png') }}"       alt=""></div>
+        <div class="swiper-slide"><img class="img-responsive" loading="lazy"  src="{{ asset('images/ict3.png') }}"       alt=""></div>
+        <div class="swiper-slide"><img class="img-responsive" loading="lazy"  src="{{ asset('images/a2i2.png') }}"       alt=""></div>
+        <div class="swiper-slide"><img class="img-responsive" loading="lazy"  src="{{ asset('images/scout3.png') }}"      alt=""></div>
+        <div class="swiper-slide"><img class="img-responsive" loading="lazy"  src="{{ asset('images/bcct2.png') }}"       alt=""></div>
+        <div class="swiper-slide"><img class="img-responsive" loading="lazy"  src="{{ asset('images/govt3.png') }}"       alt=""></div>
+        <div class="swiper-slide"><img class="img-responsive" loading="lazy"  src="{{ asset('images/ict3.png') }}"       alt=""></div>
+        <div class="swiper-slide"><img class="img-responsive" loading="lazy"  src="{{ asset('images/a2i2.png') }}"       alt=""></div>
+    </div>
+</div>
+
+<script>
+    var swiper = new Swiper('.swiper-main-valuable', {
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        spaceBetween: 30,
+        breakpoints: {
+            320: { slidesPerView: 2 },
+            480: { slidesPerView: 4 },
+            768: { slidesPerView: 5 },
+            1024: { slidesPerView: 6 },
+            1440: { slidesPerView: 7 }
+        }
+    });
+</script>
+
     
 
 
@@ -315,7 +367,7 @@
         <h3 class="font-semibold text-[16px] lg:text-[30px] leading-[37px] text-primary text-center pb-[25px] lg:pb-[47px]">Trusted by over 500+ customers<span style="font-size: 25px;">*</span>...</h3>
     </div> -->
 
-    <div class="bg-[#F3F5FF]">
+    {{-- <div class="bg-[#F3F5FF]">
         <div  class="container mx-auto px-2 lg:px-12 grid grid-cols-2 lg:grid-cols-5 justify-items-center gap-4 lg:gap-0 py-5">
             <img class="w-[95px]" src="{{ asset('images/scout3.png') }}" alt="image">
             <img class="w-[85px]" src="{{ asset('images/bcct2.png') }}" alt="image">
@@ -323,7 +375,7 @@
             <img class="w-[100px]" src="{{ asset('images/ict3.png') }}" alt="image">
             <img class="w-[75px]" src="{{ asset('images/a2i2.png') }}" alt="image">
         </div>
-    </div>
+    </div> --}}
 @endsection
 
 

@@ -32,7 +32,8 @@
                         <span class="font-semibold">Innovative Solutions:</span>
                         Emphasize your company’s ability to provide cutting-edge and innovative software solutions.
                         Showcase any proprietary technologies or unique methodologies.
-                    </li>
+                    </li>.
+                    
                     <li class="py-1">
                         <span class="font-semibold">Customer-Centric Approach:</span>
                         Describe how your company prioritizes customer needs and delivers personalized solutions.
